@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 20px 0;
+    margin: 0;
+}
+
+select {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+#skybox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.skybox-item {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.skybox-item:hover {
+    transform: scale(1.05);
+}
+
+.skybox-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.skybox-item h3 {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+    color: #e0e0e0;
+}
+
+.skybox-item a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.skybox-item a:hover {
+    background-color: #0056b3;
+}
+
+#details-container {
+    display: none;
+    padding: 20px;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#details-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#details-container img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#details-container p {
+    font-size: 1em;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+}
+
+#details-container a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+#details-container a:hover {
+    background-color: #0056b3;
+}
+
+#preview-container {
+    width: 100%;
+    height: 350px;
+    border: 1px solid #333;
+    margin-top: 20px;
+}
+
+#contact-info {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+#contact-info p {
+    margin: 0;
+}
+
+#contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.2s;
+}
+
+#contact-info a:hover {
+    color: #0056b3;
+}
+
+#contact-info i {
+    margin-right: 5px;
+}

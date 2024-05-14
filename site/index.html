@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Robbins' Skyboxes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	
+    <meta name="description" content="Download high-quality skyboxes for your projects. Browse through various categories like Morning, Afternoon, Evening, and different weather conditions.">
+    <meta name="keywords" content="Jacob robbins, firegod522, source engine, gmod, garrysmod, skyboxes, 3D skyboxes, free skyboxes, skybox download, 3D models, HDRI skyboxes, skybox textures, skybox library">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Jacob Robbins Skyboxes",
+      "url": "https://jacobdeanr.github.io/Source_Skyboxes/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://jacobdeanr.github.io/Source_Skyboxes/search?query={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <h1>Jacob Robbins' Source Skyboxes</h1>
+    <select id="time-select">
+        <option value="">All Times</option>
+        <option value="Morning">Morning</option>
+        <option value="Afternoon">Afternoon</option>
+        <option value="Evening">Evening</option>
+        <option value="Night">Night</option>
+        <option value="Misc">Misc</option>
+    </select>
+    <select id="weather-select">
+        <option value="">All Weather Conditions</option>
+        <option value="Clear">Clear</option>
+        <option value="Cloudy">Cloudy</option>
+        <option value="Hazy">Hazy</option>
+        <option value="Overcast">Overcast</option>
+        <option value="Stormy">Stormy</option>
+    </select>
+    <div id="skybox-container"></div>
+    <div id="details-container" style="display:none;">
+        <div id="preview-container" style="width: 100%; height: 400px;"></div>
+    </div>
+
+    <h2>Contact Information</h2>
+    <div id="contact-info">
+        <p>
+            <a href="https://github.com/Jacobdeanr" target="_blank"><i class="fab fa-github"></i>GitHub</a> |
+            <a href="https://discord.com/users/160963792367386624" target="_blank"><i class="fab fa-discord"></i>Discord</a> |
+            <a href="https://www.instagram.com/jakobiobrien/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> |
+            <a href="https://steamcommunity.com/id/Jakobi_OBrien/" target="_blank"><i class="fab fa-steam"></i> Steam</a> 
+        </p>
+    </div>
+
+    <script src="fetch_skyboxes.js"></script>
+</body>
+</html>
