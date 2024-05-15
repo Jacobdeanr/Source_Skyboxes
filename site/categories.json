@@ -1,47 +1,857 @@
 {
-    "sky_cloudy001_hdr.7z": 		["Afternoon", "Cloudy"],
-    "sky_cloudy002_hdr.7z": 		["Afternoon", "Cloudy"],
-    "sky_cloudy003_hdr.7z": 		["Afternoon", "Cloudy"],
-    "sky_cloudy004_hdr.7z": 		["Afternoon", "Cloudy"],
-    "sky_cloudy005_hdr.7z": 		["Afternoon", "Cloudy"],
-    "sky_cloudy006_hdr.7z": 		["Afternoon", "Cloudy"],
-    "sky_cloudy007_hdr.7z": 		["Afternoon", "Cloudy"],
-    "sky_cloudy008_hdr.7z": 		["Afternoon", "Cloudy"],
-    "sky_cloudy009_hdr.7z": 		["Afternoon", "Cloudy"],
-    "sky_cloudy010_hdr.7z": 		["Afternoon", "Cloudy"],
-    "sky_cloudy011_hdr.7z": 		["Evening", "Cloudy"],
-    "sky_cloudy012_hdr.7z": 		["Afternoon", "Cloudy"],
-    "sky_cloudy013_hdr.7z": 		["Afternoon", "Cloudy", "Stormy"],
-    "sky_cloudy014_hdr.7z": 		["Morning", "Afternoon", "Cloudy"],
-    "sky_morning001_hdr.7z": 		["Morning", "Evening", "Cloudy"],
-    "sky_night001_hdr.7z": 			["Night", "Cloudy"],
-    "sky_night002_hdr.7z": 			["Night","Cloudy"],
-    "sky_night003_hdr.7z": 			["Night", "Clear"],
-    "sky_night004_hdr.7z": 			["Night", "Hazy"],
-    "sky_night005_hdr.7z": 			["Night", "Cloudy"],
-    "sky_night006.7z": 				["Night","Clear"],
-    "sky_night007_hdr.7z": 			["Night","Cloudy"],
-    "sky_night008_hdr.7z": 			["Night", "Cloudy"],
-    "sky_overcast001_hdr.7z": 		["Overcast", "Cloudy"],
-    "sky_overcast002_hdr.7z": 		["Afternoon", "Clear" , "Hazy"],
-    "sky_overcast003_hdr.7z": 		["Afternoon", "Stormy", "Overcast", "Cloudy"],
-    "sky_stormy01_hdr.7z": 			["Stormy", "Cloudy"],
-    "sky_stormy02_hdr.7z": 			["Stormy", "Cloudy"],
-    "sky_sunny0001_hdr.7z": 		["Afternoon", "Clear"],
-    "sky_sunny0002_hdr.7z": 		["Afternoon", "Clear"],
-    "sky_sunny003_hdr.7z": 			["Morning", "Clear"],
-    "sky_sunny004_hdr.7z": 			["Morning","Evening", "Cloudy"],
-    "sky_sunny005.7z": 				["Morning", "Clear"],
-    "sky_sunny006.7z": 				["Morning", "Clear"],
-    "sky_sunny007_hdr.7z": 			["Afternoon", "Clear"],
-    "sky_sunset001_hdr.7z": 		["Evening"],
-    "sky_sunset002_hdr.7z": 		["Evening"],
-    "sky_sunset003_hdr.7z": 		["Evening", "Cloudy"],
-    "sky_sunset004_hdr.7z": 		["Evening"],
-    "sky_sunset005.7z": 			["Evening", "Cloudy"],
-    "sky_sunset006_hdr.7z": 		["Evening", "Cloudy"],
-    "sky_sunset007_hdr.7z": 		["Evening", "Cloudy"],
-    "sky_sunset008_hdr.7z": 		["Evening", "Cloudy"],
-    "sky_devroom_hdr.7z": 			["Misc"],
-    "sky_lab_hdr.7z": 				["Misc"]
+    "sky_cloudy001_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Afternoon", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_cloudy002_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Afternoon", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_cloudy003_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Afternoon", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 30 0",
+            "pitch": "-65",
+            "brightness":[254, 249, 218, 600],
+            "ambience":[77, 96, 130, 400]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_cloudy004_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Afternoon", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 198 0",
+            "pitch": "-60",
+            "brightness":[215, 199, 149, 500],
+            "ambience":[55, 88, 115, 250]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_cloudy005_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Afternoon", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_cloudy006_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Afternoon", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 47 0",
+            "pitch": "-75",
+            "brightness":[255, 237, 183, 600],
+            "ambience":[120, 139, 160, 300]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_cloudy007_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Afternoon", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_cloudy008_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Afternoon", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_cloudy009_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Afternoon", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 50 0",
+            "pitch": "-60",
+            "brightness":[255, 252, 240, 500],
+            "ambience":[148, 173, 195, 200]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_cloudy010_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Afternoon", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 80 0",
+            "pitch": "-50",
+            "brightness":[255, 249, 240, 500],
+            "ambience":[103, 139, 175, 200]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_cloudy011_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Evening", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_cloudy012_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Afternoon", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_cloudy013_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Afternoon", "Cloudy", "Overcast"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_cloudy014_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Morning", "Afternoon", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_morning001_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Morning", "Evening", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 353 0",
+            "pitch": "-35",
+            "brightness":[255, 232, 217, 600],
+            "ambience":[77, 96, 130, 400]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_night001_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Night", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 0 0",
+            "pitch": "-30",
+            "brightness":[206, 247, 255, 100],
+            "ambience":[77, 96, 130, 50]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_night002_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Night","Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 79 0",
+            "pitch": "-45",
+            "brightness":[206, 247, 255, 150],
+            "ambience":[77, 96, 130, 50]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_night003_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Night", "Clear"],
+        "sunParameters":
+        {
+            "sunAngle": "0 330 0",
+            "pitch": "-50",
+            "brightness":[60, 80, 96, 100],
+            "ambience":[29, 37, 46, 50]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_night004_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Night", "Hazy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 79 0",
+            "pitch": "-60",
+            "brightness":[96, 116, 140, 50],
+            "ambience":[62, 64, 74, 15]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_night005_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Night", "Overcast"],
+        "sunParameters":
+        {
+            "sunAngle": "0 125 0",
+            "pitch": "-56",
+            "brightness":[116, 131, 162, 100],
+            "ambience":[70, 84, 104, 25]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_night006.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Night","Clear"],
+        "sunParameters":
+        {
+            "sunAngle": "0 190 0",
+            "pitch": "-30",
+            "brightness":[80, 124, 146, 250],
+            "ambience":[56, 72, 92, 100]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[27, 47, 70],
+            "secondaryFogColor":[27, 47, 70]
+        }
+    },
+    "sky_night007_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Night","Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_night008_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Night", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_overcast001_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Afternoon", "Hazy", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 170 0",
+            "pitch": "-45",
+            "brightness":[242, 244, 198, 300],
+            "ambience":[97, 109, 105, 200]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_overcast002_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Afternoon", "Clear" , "Hazy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 177 0",
+            "pitch": "-75",
+            "brightness":[247, 243, 232, 400],
+            "ambience":[48, 72, 103, 200]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_overcast003_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Afternoon", "Overcast", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 93 0",
+            "pitch": "-50",
+            "brightness":[210, 197, 176, 150],
+            "ambience":[71, 86, 103, 30]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[87, 106, 128],
+            "secondaryFogColor":[87, 106, 128]
+        }
+    },
+    "sky_stormy01_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Overcast", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_stormy02_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Overcast", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_sunny0001_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Afternoon", "Clear"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_sunny0002_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Afternoon", "Clear"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_sunny003_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Morning", "Clear"],
+        "sunParameters":
+        {
+            "sunAngle": "0 255 0",
+            "pitch": "-40",
+            "brightness":[255, 244, 223, 600],
+            "ambience":[48, 72, 103, 400]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_sunny004_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Morning","Evening", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 113 0",
+            "pitch": "-40",
+            "brightness":[255, 237, 193, 600],
+            "ambience":[58, 82, 135, 150]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_sunny005.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Morning", "Clear"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_sunny006.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Morning", "Clear"],
+        "sunParameters":
+        {
+            "sunAngle": "0 -8 0",
+            "pitch": "-40",
+            "brightness":[254, 235, 214, 600],
+            "ambience":[74, 129, 162, 300]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[243, 240, 214],
+            "secondaryFogColor":[243, 240, 214]
+        }
+    },
+    "sky_sunny007_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Afternoon", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_sunset001_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Evening", "Clear"],
+        "sunParameters":
+        {
+            "sunAngle": "0 350 0",
+            "pitch": "-15",
+            "brightness":[247, 214, 136, 400],
+            "ambience":[74, 94, 113, 200]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_sunset002_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Evening", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 150 0",
+            "pitch": "-30",
+            "brightness":[254, 227, 201, 700],
+            "ambience":[48, 72, 103, 400]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_sunset003_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Evening", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 260 0",
+            "pitch": "-20",
+            "brightness":[253, 224, 206, 600],
+            "ambience":[71, 96, 135, 350]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_sunset004_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Evening", "Clear"],
+        "sunParameters":
+        {
+            "sunAngle": "0 176 0",
+            "pitch": "-10",
+            "brightness":[226, 221, 186, 300],
+            "ambience":[51, 65, 88, 200]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_sunset005.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Evening", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 36 0",
+            "pitch": "-25",
+            "brightness":[254, 193, 133, 450],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[255, 251, 164],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_sunset006_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Evening", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 -63 0",
+            "pitch": "-5",
+            "brightness":[255, 147, 100, 100],
+            "ambience":[11, 24, 55, 100]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[20, 38, 84],
+            "secondaryFogColor":[20, 38, 84]
+        }
+    },
+    "sky_sunset007_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Evening", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_sunset008_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Evening", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 154 0",
+            "pitch": "-15",
+            "brightness":[251, 242, 234, 250],
+            "ambience":[147, 164, 191, 200]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[40, 51, 74],
+            "secondaryFogColor":[40, 51, 74]
+        }
+    },
+    "sky_devroom_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Misc"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }   
+    },
+    "sky_lab_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "license": "CC BY 4.0",
+        "categories":["Misc"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    }
 }
