@@ -91,15 +91,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     const ambienceTextColor = getTextColor(itemData.sunParameters.ambience.slice(0, 3));
                     const primaryFogTextColor = getTextColor(itemData.fogParameters.primaryFogColor);
                     const secondaryFogTextColor = getTextColor(itemData.fogParameters.secondaryFogColor);
+
+                    const publishDate = document.createElement('p');
+                    publishDate.textContent = `Published Date: ${formatDate(itemData.publishDate)}`;
                     
                     //License
                     const license = document.createElement('p');
                     license.id = "license-info"
                     license.innerHTML = `License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
                     Creative Commons Attribution 4.0 International (CC BY 4.0)</a>`;
-    
-                    console.log(brightnessColor);
-                    console.log(primaryFogTextColor);
     
                     const envParameters = `
                         <tr>
@@ -131,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     detailsContainer.appendChild(author);if (itemData.description.trim() !== "") {
                         detailsContainer.appendChild(description);
                     }
+                    detailsContainer.appendChild(publishDate);
                     detailsContainer.appendChild(fileSize);
                     detailsContainer.appendChild(license);
                     detailsContainer.appendChild(link);
@@ -149,6 +150,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
         return `${(bytes / Math.pow(1024, i)).toFixed(2)} ${sizes[i]}`;
     }
+    
+    function formatDate(dateString) {
+        const date = new Date(dateString);
+        const month = date.getMonth() + 1;
+        const day = date.getDate();
+        const year = date.getFullYear();
+        return `${month}/${day}/${year}`;
+    }
+
 
     function getTextColor(rgbArray) {
         const [r, g, b] = rgbArray;
