@@ -3,6 +3,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-06-23",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy"],
         "sunParameters":
@@ -22,6 +23,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-06-25",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy"],
         "sunParameters":
@@ -41,6 +43,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-07-03",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy"],
         "sunParameters":
@@ -60,14 +63,15 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-07-03",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy"],
         "sunParameters":
         {
-            "sunAngle": "0 198 0",
-            "pitch": "-60",
-            "brightness":[215, 199, 149, 500],
-            "ambience":[55, 88, 115, 250]
+            "sunAngle": "0 30 0",
+            "pitch": "-65",
+            "brightness":[254, 249, 218, 600],
+            "ambience":[77, 96, 130, 400]
         },
         "fogParameters":
         {
@@ -79,6 +83,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-08-24",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy"],
         "sunParameters":
@@ -97,7 +102,8 @@
     "sky_cloudy006_hdr.7z":
     {
         "author": "Jacob Robbins",
-        "description": "",
+        "description": "2013-03-15",
+        "publishDate": "",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy"],
         "sunParameters":
@@ -117,14 +123,15 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2013-07-19",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy"],
         "sunParameters":
         {
-            "sunAngle": "???",
-            "pitch": "?",
-            "brightness":[0, 0, 0, 0],
-            "ambience":[0, 0, 0, 0]
+            "sunAngle": "0 -15 0",
+            "pitch": "-80",
+            "brightness":[255, 249, 236, 600],
+            "ambience":[119, 155, 176, 300]
         },
         "fogParameters":
         {
@@ -136,14 +143,15 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2014-04-27",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy"],
         "sunParameters":
         {
-            "sunAngle": "???",
-            "pitch": "?",
-            "brightness":[0, 0, 0, 0],
-            "ambience":[0, 0, 0, 0]
+            "sunAngle": "0 85 0",
+            "pitch": "-56",
+            "brightness":[210, 223, 232, 400],
+            "ambience":[70, 84, 104, 200]
         },
         "fogParameters":
         {
@@ -155,6 +163,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2014-06-18",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy"],
         "sunParameters":
@@ -174,6 +183,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2014-09-12",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy"],
         "sunParameters":
@@ -193,6 +203,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2019-07-03",
         "license": "CC BY 4.0",
         "categories":["Evening", "Cloudy"],
         "sunParameters":
@@ -212,6 +223,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2022-07-08",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy"],
         "sunParameters":
@@ -231,6 +243,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2022-07-08",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy", "Overcast"],
         "sunParameters":
@@ -250,6 +263,27 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2022-07-08",
+        "license": "CC BY 4.0",
+        "categories":["Morning", "Afternoon", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "???",
+            "pitch": "?",
+            "brightness":[0, 0, 0, 0],
+            "ambience":[0, 0, 0, 0]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[0, 0, 0],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
+    "sky_cloudy015_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "publishDate": "2013-02-27",
         "license": "CC BY 4.0",
         "categories":["Morning", "Afternoon", "Cloudy"],
         "sunParameters":
@@ -269,6 +303,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-07-09",
         "license": "CC BY 4.0",
         "categories":["Morning", "Evening", "Cloudy"],
         "sunParameters":
@@ -288,6 +323,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-07-11",
         "license": "CC BY 4.0",
         "categories":["Night", "Cloudy"],
         "sunParameters":
@@ -307,6 +343,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-07-13",
         "license": "CC BY 4.0",
         "categories":["Night","Cloudy"],
         "sunParameters":
@@ -326,6 +363,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-08-05",
         "license": "CC BY 4.0",
         "categories":["Night", "Clear"],
         "sunParameters":
@@ -345,6 +383,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2013-10-13",
         "license": "CC BY 4.0",
         "categories":["Night", "Hazy"],
         "sunParameters":
@@ -364,6 +403,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2013-11-25",
         "license": "CC BY 4.0",
         "categories":["Night", "Overcast"],
         "sunParameters":
@@ -383,6 +423,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2015-11-12",
         "license": "CC BY 4.0",
         "categories":["Night","Clear"],
         "sunParameters":
@@ -402,6 +443,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2022-07-08",
         "license": "CC BY 4.0",
         "categories":["Night","Cloudy"],
         "sunParameters":
@@ -421,6 +463,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2022-07-08",
         "license": "CC BY 4.0",
         "categories":["Night", "Cloudy"],
         "sunParameters":
@@ -440,6 +483,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-07-16",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Hazy", "Cloudy"],
         "sunParameters":
@@ -459,6 +503,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-07-27",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Clear" , "Hazy"],
         "sunParameters":
@@ -478,6 +523,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2013-10-20",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Overcast", "Cloudy"],
         "sunParameters":
@@ -497,6 +543,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2022-07-26",
         "license": "CC BY 4.0",
         "categories":["Overcast", "Cloudy"],
         "sunParameters":
@@ -516,6 +563,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2022-07-27",
         "license": "CC BY 4.0",
         "categories":["Overcast", "Cloudy"],
         "sunParameters":
@@ -535,6 +583,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-06-20",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Clear"],
         "sunParameters":
@@ -554,6 +603,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-06-22",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Clear"],
         "sunParameters":
@@ -573,6 +623,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-08-04",
         "license": "CC BY 4.0",
         "categories":["Morning", "Clear"],
         "sunParameters":
@@ -592,6 +643,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-12-13",
         "license": "CC BY 4.0",
         "categories":["Morning","Evening", "Cloudy"],
         "sunParameters":
@@ -611,6 +663,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2016-01-17",
         "license": "CC BY 4.0",
         "categories":["Morning", "Clear"],
         "sunParameters":
@@ -630,6 +683,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2016-01-27",
         "license": "CC BY 4.0",
         "categories":["Morning", "Clear"],
         "sunParameters":
@@ -649,6 +703,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2022-07-23",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy"],
         "sunParameters":
@@ -668,6 +723,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-07-02",
         "license": "CC BY 4.0",
         "categories":["Evening", "Clear"],
         "sunParameters":
@@ -687,6 +743,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-07-17",
         "license": "CC BY 4.0",
         "categories":["Evening", "Cloudy"],
         "sunParameters":
@@ -706,6 +763,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-08-14",
         "license": "CC BY 4.0",
         "categories":["Evening", "Cloudy"],
         "sunParameters":
@@ -725,6 +783,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2012-12-15",
         "license": "CC BY 4.0",
         "categories":["Evening", "Clear"],
         "sunParameters":
@@ -744,6 +803,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2016-01-27",
         "license": "CC BY 4.0",
         "categories":["Evening", "Cloudy"],
         "sunParameters":
@@ -763,6 +823,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2017-09-03",
         "license": "CC BY 4.0",
         "categories":["Evening", "Cloudy"],
         "sunParameters":
@@ -782,6 +843,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2020-08-04",
         "license": "CC BY 4.0",
         "categories":["Evening", "Cloudy"],
         "sunParameters":
@@ -801,6 +863,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2022-11-26",
         "license": "CC BY 4.0",
         "categories":["Evening", "Cloudy"],
         "sunParameters":
@@ -820,6 +883,7 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2022-07-08",
         "license": "CC BY 4.0",
         "categories":["Misc"],
         "sunParameters":
@@ -839,18 +903,19 @@
     {
         "author": "Jacob Robbins",
         "description": "",
+        "publishDate": "2022-08-02",
         "license": "CC BY 4.0",
         "categories":["Misc"],
         "sunParameters":
         {
-            "sunAngle": "???",
-            "pitch": "?",
-            "brightness":[0, 0, 0, 0],
-            "ambience":[0, 0, 0, 0]
+            "sunAngle": "0 61.5 0",
+            "pitch": "-17",
+            "brightness":[255, 196, 137, 500],
+            "ambience":[151, 179, 200, 300]
         },
         "fogParameters":
         {
-            "primaryFogColor":[0, 0, 0],
+            "primaryFogColor":[74, 113, 140],
             "secondaryFogColor":[0, 0, 0]
         }
     }
