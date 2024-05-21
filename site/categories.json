@@ -579,6 +579,26 @@
             "secondaryFogColor":[0, 0, 0]
         }
     },
+    "sky_stormy03_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "publishDate": "2024-05-21",
+        "license": "CC BY 4.0",
+        "categories":["Sunset","Overcast", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 -48 0",
+            "pitch": "-28",
+            "brightness":[255, 248, 204, 400],
+            "ambience":[133, 96, 71, 150]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[80, 65, 56],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
     "sky_sunny0001_hdr.7z":
     {
         "author": "Jacob Robbins",
