@@ -501,14 +501,14 @@
         "categories":["Overcast", "Cloudy"],
         "sunParameters":
         {
-            "sunAngle": "???",
-            "pitch": "?",
-            "brightness":[0, 0, 0, 0],
-            "ambience":[0, 0, 0, 0]
+            "sunAngle": "0 251 0",
+            "pitch": "-8",
+            "brightness":[196, 177, 135, 500],
+            "ambience":[113, 124, 138, 200]
         },
         "fogParameters":
         {
-            "primaryFogColor":[0, 0, 0],
+            "primaryFogColor":[29, 34, 41],
             "secondaryFogColor":[0, 0, 0]
         }
     },
@@ -520,10 +520,10 @@
         "categories":["Overcast", "Cloudy"],
         "sunParameters":
         {
-            "sunAngle": "???",
-            "pitch": "?",
-            "brightness":[0, 0, 0, 0],
-            "ambience":[0, 0, 0, 0]
+            "sunAngle": "0 142 0",
+            "pitch": "-20",
+            "brightness":[247, 247, 210, 500],
+            "ambience":[123, 132, 129, 300]
         },
         "fogParameters":
         {
