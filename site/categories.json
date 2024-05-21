@@ -585,7 +585,7 @@
         "description": "",
         "publishDate": "2024-05-21",
         "license": "CC BY 4.0",
-        "categories":["Sunset","Overcast", "Cloudy"],
+        "categories":["Evening","Overcast", "Cloudy"],
         "sunParameters":
         {
             "sunAngle": "0 -48 0",
