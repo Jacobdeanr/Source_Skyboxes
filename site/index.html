@@ -34,14 +34,19 @@
     <header>
         <h1>Jacob Robbins' Skyboxes</h1>
     </header>
-    <select id="time-select">
-        <option value="">All Times</option>
-        <option value="Morning">Morning</option>
-        <option value="Afternoon">Afternoon</option>
-        <option value="Evening">Evening</option>
-        <option value="Night">Night</option>
-        <option value="Misc">Misc</option>
+    <select id="time-select" aria-label="Select Time of Day">
+        <optgroup label="Times of Day">
+            <option value="">All Times</option>
+            <option value="Morning">Morning</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Evening">Evening</option>
+            <option value="Night">Night</option>
+        </optgroup>
+        <optgroup label="Other">
+            <option value="Misc">Misc</option>
+        </optgroup>
     </select>
+    
     <select id="weather-select">
         <option value="">All Weather Conditions</option>
         <option value="Clear">Clear</option>
