@@ -52,6 +52,11 @@ body {
     color: #000;
 }
 
+#header-link {
+    text-decoration: none;
+    display: block;
+}
+
 header {
     padding-top: 60px; /* Adjust for banner height */
     background-color: #1f1f1f;
