@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function fetchSkyboxDetails(name) {
-        fetch('https://api.github.com/repos/Jacobdeanr/Source_Skyboxes/contents')
+        fetch('https://api.github.com/repos/Jacobdeanr/Source_Skyboxes/contents'), { cache: 'no-cache' }
             .then(response => response.json())
             .then(data => {
                 const item = data.find(item => item.name === `${name}.7z`);
