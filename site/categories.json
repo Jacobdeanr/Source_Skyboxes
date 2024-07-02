@@ -330,7 +330,7 @@
             "sunAngle": "0 116 0",
             "pitch": "-50",
             "brightness":[255, 248, 232, 550],
-            "ambience":[116, 154, 192, 3000]
+            "ambience":[116, 154, 192, 300]
         },
         "fogParameters":
         {
