@@ -517,6 +517,25 @@
             "primaryFogColor":[0, 0, 0],
             "secondaryFogColor":[0, 0, 0]
         }
+    },"sky_night009_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "publishDate": "2022-07-08",
+        "license": "CC BY 4.0",
+        "categories":["Night", "Clear"],
+        "sunParameters":
+        {
+            "sunAngle": "0 171 0",
+            "pitch": "-2",
+            "brightness":[216, 192, 177, 100],
+            "ambience":[77, 96, 130, 200]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[27, 41, 71],
+            "secondaryFogColor":[0, 0, 0]
+        }
     },
     "sky_overcast001_hdr.7z":
     {
