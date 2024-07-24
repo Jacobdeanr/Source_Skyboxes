@@ -996,5 +996,25 @@
             "primaryFogColor":[74, 113, 140],
             "secondaryFogColor":[0, 0, 0]
         }
+    },
+    "sky_fracture01_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "publishDate": "2024-07-24",
+        "license": "CC BY 4.0",
+        "categories":["Misc"],
+        "sunParameters":
+        {
+            "sunAngle": "0 210 0",
+            "pitch": "-40",
+            "brightness":[223, 222, 181, 50],
+            "ambience":[69, 89, 112, 200]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[78, 87, 103],
+            "secondaryFogColor":[0, 0, 0]
+        }
     }
 }
