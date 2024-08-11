@@ -977,6 +977,26 @@
             "secondaryFogColor":[40, 51, 74]
         }
     },
+    "sky_wildfire01_hdr.7z":
+    {
+        "author": "Jacob Robbins",
+        "description": "",
+        "publishDate": "2024-08-11",
+        "license": "CC BY 4.0",
+        "categories":["Evening", "Cloudy"],
+        "sunParameters":
+        {
+            "sunAngle": "0 173 0",
+            "pitch": "-20",
+            "brightness":[255, 173, 112, 400],
+            "ambience":[152, 96, 80, 400]
+        },
+        "fogParameters":
+        {
+            "primaryFogColor":[172, 137, 132],
+            "secondaryFogColor":[0, 0, 0]
+        }
+    },
     "sky_devroom_hdr.7z":
     {
         "author": "Jacob Robbins",
