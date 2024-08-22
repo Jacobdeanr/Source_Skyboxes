@@ -1,2 +1,6 @@
-
-site/run_local.cmd
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+generate_skybox_pages.rb
