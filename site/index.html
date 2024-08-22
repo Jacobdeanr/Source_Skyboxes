@@ -71,8 +71,9 @@
         </p>
     </div> 
 
-    <script src="fetch_skyboxes.js"></script>
-    <script src="banner.js"></script>
+    <script defer src="fetch_skyboxes.js?cb=${new Date().getTime()}"></script>
+    
+    <script src="banner.js?cb=${new Date().getTime()}"></script>
     
 </body>
 </html>
