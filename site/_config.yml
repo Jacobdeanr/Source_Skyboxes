@@ -1,0 +1,20 @@
+baseurl: "/Source_Skyboxes"
+url: "https://jacobdeanr.github.io"
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+collections:
+  skyboxes:
+    output: true
+    permalink: /skyboxes/:path/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - generate_skybox_pages.rb
+  - .gitignore
