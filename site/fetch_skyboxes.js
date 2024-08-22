@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 itemElement.appendChild(title);
                 itemElement.appendChild(img);
                 itemElement.appendChild(link);
-
                 container.appendChild(itemElement);
             }
         });
@@ -125,6 +124,8 @@ document.addEventListener("DOMContentLoaded", function () {
                             ${envParameters}
                         </table>`;
                             //<th>Secondary Fog Color</th>
+
+                    
     
                     detailsContainer.appendChild(title);
                     detailsContainer.appendChild(img);
@@ -136,6 +137,27 @@ document.addEventListener("DOMContentLoaded", function () {
                     detailsContainer.appendChild(fileSize);
                     detailsContainer.appendChild(license);
                     detailsContainer.appendChild(link);
+                    
+                     // Create a separate section for the map links with a card-like design
+                    if (itemData.steamMaps) {
+                        const mapsSection = document.createElement('div');
+                        mapsSection.className = 'maps-section';
+
+                        const mapsTitle = document.createElement('h3');
+                        mapsTitle.textContent = 'Maps featuring this skybox';
+                        mapsSection.appendChild(mapsTitle);
+
+                        itemData.steamMaps.forEach(map => {
+                            const mapLink = document.createElement('a');
+                            mapLink.href = map.url;
+                            mapLink.target = '_blank';
+                            mapLink.textContent = map.name;
+                            mapLink.className = 'map-link';
+                            mapsSection.appendChild(mapLink);
+                        });
+
+                        detailsContainer.appendChild(mapsSection);
+                    }
     
                     document.getElementById('skybox-container').style.display = 'none';
                     detailsContainer.style.display = 'block';

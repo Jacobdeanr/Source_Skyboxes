@@ -6,6 +6,12 @@
         "publishDate": "2012-06-23",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy"],
+        "steamMaps": [
+        {
+            "name": "Spruceville",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1486408313"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "???",
@@ -46,6 +52,12 @@
         "publishDate": "2012-07-03",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy"],
+        "steamMaps": [
+        {
+            "name": "zs_bankbarn",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2904941963"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "0 30 0",
@@ -66,6 +78,12 @@
         "publishDate": "2012-07-03",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy"],
+        "steamMaps": [
+        {
+            "name": "de_ali",
+            "url": "https://counterstrike.fandom.com/wiki/Ali"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "0 30 0",
@@ -166,6 +184,12 @@
         "publishDate": "2014-06-18",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy"],
+        "steamMaps": [
+        {
+            "name": "jb_skyscratchers",
+            "url": "https://store.steampowered.com/app/869480/Jabroni_Brawl_Episode_3/"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "0 50 0",
@@ -186,6 +210,12 @@
         "publishDate": "2014-09-12",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy"],
+        "steamMaps": [
+        {
+            "name": "Neutron",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=485441486"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "0 80 0",
@@ -206,6 +236,12 @@
         "publishDate": "2019-07-03",
         "license": "CC BY 4.0",
         "categories":["Evening", "Cloudy"],
+        "steamMaps": [
+        {
+            "name": "Butcher's Den Forever",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1835697333"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "???",
@@ -226,6 +262,16 @@
         "publishDate": "2022-07-08",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy"],
+        "steamMaps": [
+        {
+            "name": "Terminal",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3305629964"
+        },
+        {
+            "name": "rp_mojave",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3021371932"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "???",
@@ -246,6 +292,12 @@
         "publishDate": "2022-07-08",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Cloudy", "Overcast"],
+        "steamMaps": [
+        {
+            "name": "gm_southbeach_d",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2991458245"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "???",
@@ -365,6 +417,12 @@
         "publishDate": "2024-08-09",
         "license": "CC BY 4.0",
         "categories":["Morning", "Evening", "Clear"],
+        "steamMaps": [
+        {
+            "name": "Lights (Mostly) Out",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3313845264"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "0 237 0",
@@ -405,6 +463,12 @@
         "publishDate": "2012-07-13",
         "license": "CC BY 4.0",
         "categories":["Night","Cloudy"],
+        "steamMaps": [
+        {
+            "name": "Relay Station",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3260478286"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "0 79 0",
@@ -425,6 +489,12 @@
         "publishDate": "2012-08-05",
         "license": "CC BY 4.0",
         "categories":["Night", "Clear"],
+        "steamMaps": [
+        {
+            "name": "Capistrano",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=495355503"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "0 330 0",
@@ -465,6 +535,12 @@
         "publishDate": "2013-11-25",
         "license": "CC BY 4.0",
         "categories":["Night", "Overcast"],
+        "steamMaps": [
+        {
+            "name": "jb_frostbite",
+            "url": "https://store.steampowered.com/app/869480/Jabroni_Brawl_Episode_3/"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "0 125 0",
@@ -485,6 +561,16 @@
         "publishDate": "2015-11-12",
         "license": "CC BY 4.0",
         "categories":["Night","Clear"],
+        "steamMaps": [
+        {
+            "name": "Black Mesa North",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3056456503"
+        },
+        {
+            "name": "jb_lich2",
+            "url": "https://store.steampowered.com/app/869480/Jabroni_Brawl_Episode_3/"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "0 190 0",
@@ -505,6 +591,16 @@
         "publishDate": "2022-07-08",
         "license": "CC BY 4.0",
         "categories":["Night","Cloudy"],
+        "steamMaps": [
+        {
+            "name": "Anvers Station",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3195287999"
+        },
+        {
+            "name": "gm_southbeach_n",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2991458245"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "???",
@@ -525,6 +621,16 @@
         "publishDate": "2022-07-08",
         "license": "CC BY 4.0",
         "categories":["Night", "Cloudy"],
+        "steamMaps": [
+        {
+            "name": "zs_beyond (v2)",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2404844911"
+        },
+        {
+            "name": "gm_breeze",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2310516277"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "???",
@@ -644,6 +750,12 @@
         "publishDate": "2022-07-27",
         "license": "CC BY 4.0",
         "categories":["Overcast", "Cloudy"],
+        "steamMaps": [
+        {
+            "name": "Section 9",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3254605188"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "0 142 0",
@@ -664,6 +776,12 @@
         "publishDate": "2024-05-21",
         "license": "CC BY 4.0",
         "categories":["Evening","Overcast", "Cloudy"],
+        "steamMaps": [
+        {
+            "name": "Revival | City of Ash | Event Map",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3272379514"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "0 -48 0",
@@ -704,6 +822,12 @@
         "publishDate": "2012-06-22",
         "license": "CC BY 4.0",
         "categories":["Afternoon", "Clear"],
+        "steamMaps": [
+        {
+            "name": "Flatsand",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1707243677"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "???",
@@ -764,6 +888,16 @@
         "publishDate": "2016-01-17",
         "license": "CC BY 4.0",
         "categories":["Morning", "Clear"],
+        "steamMaps": [
+        {
+            "name": "Desert Siege",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2567992655"
+        },
+        {
+            "name": "Sprint Mesa",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2776159217"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "???",
@@ -784,6 +918,12 @@
         "publishDate": "2016-01-27",
         "license": "CC BY 4.0",
         "categories":["Morning", "Clear"],
+        "steamMaps": [
+        {
+            "name": "Natalyas Cottage",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2987012820"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "0 -8 0",
@@ -864,6 +1004,12 @@
         "publishDate": "2012-08-14",
         "license": "CC BY 4.0",
         "categories":["Evening", "Cloudy"],
+        "steamMaps": [
+        {
+            "name": "Winter Solstice",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1944734598"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "0 260 0",
@@ -904,6 +1050,12 @@
         "publishDate": "2016-01-27",
         "license": "CC BY 4.0",
         "categories":["Evening", "Cloudy"],
+        "steamMaps": [
+        {
+            "name": "Vacant (MW19)",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3245626404"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "0 36 0",
@@ -924,6 +1076,12 @@
         "publishDate": "2017-09-03",
         "license": "CC BY 4.0",
         "categories":["Evening", "Cloudy"],
+        "steamMaps": [
+        {
+            "name": "Lonely Paradise",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3274095188"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "0 -63 0",
@@ -964,6 +1122,16 @@
         "publishDate": "2022-11-26",
         "license": "CC BY 4.0",
         "categories":["Evening", "Cloudy"],
+        "steamMaps": [
+        {
+            "name": "Port Trajan",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3239363152"
+        },
+        {
+            "name": "TDM Postbellum",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3283190993"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "0 154 0",
@@ -984,6 +1152,16 @@
         "publishDate": "2024-08-11",
         "license": "CC BY 4.0",
         "categories":["Evening", "Cloudy"],
+        "steamMaps": [
+        {
+            "name": "rp_dustvegas",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152100416"
+        },
+        {
+            "name": "West London",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3129692021"
+        }
+        ],
         "sunParameters":
         {
             "sunAngle": "0 173 0",
