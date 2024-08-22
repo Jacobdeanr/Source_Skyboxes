@@ -1,0 +1,65 @@
+---
+layout: default
+---
+<head>
+    <link rel="stylesheet" href="{{ '/assets/css/skybox-details.css' | relative_url }}">
+</head>
+<article>
+    <div class="skybox-details">
+        <h2>{{ page.skybox_name }}</h2>
+        <img src="{{ '/assets/images/high-res/' | relative_url }}{{ page.skybox_name }}.jpg" alt="{{ page.skybox_name }}">
+        <table>
+            <tr>
+                <th>Sun Angle</th>
+                <th>Pitch</th>
+                <th>Brightness</th>
+                <th>Ambient</th>
+                <th>Primary Fog Color</th>
+                <th>Secondary Fog Color</th>
+            </tr>
+            <tr>
+                <td>{{ page.sunParameters.sunAngle }}</td>
+                <td>{{ page.sunParameters.pitch }}</td>
+                <td style="background-color: rgb({{ page.sunParameters.brightness | join: ', ' }}); color: {{ page.sunParameters.brightnessTextColor }}">
+                    {{ page.sunParameters.brightness | join: ' ' }}
+                </td>
+                <td style="background-color: rgb({{ page.sunParameters.ambience | join: ', ' }}); color: {{ page.sunParameters.ambienceTextColor }}">
+                    {{ page.sunParameters.ambience | join: ' ' }}
+                </td>
+                <td style="background-color: rgb({{ page.fogParameters.primaryFogColor | join: ', ' }}); color: {{ page.fogParameters.primaryFogTextColor }}">
+                    {{ page.fogParameters.primaryFogColor | join: ' ' }}
+                </td>
+                <td style="background-color: rgb({{ page.fogParameters.secondaryFogColor | join: ', ' }}); color: {{ page.fogParameters.secondaryFogTextColor }}">
+                    {{ page.fogParameters.secondaryFogColor | join: ' ' }}
+                </td>
+            </tr>
+        </table>
+        
+        <p><strong>Author:</strong> {{ page.author }}</p>
+        
+        {% if page.description %}
+        <p><strong>Description:</strong> {{ page.description }}</p>
+        {% endif %}
+        
+        <p><strong>Published on:</strong> {{ page.publishDate }}</p>
+        
+        <p id="license-info">
+            <strong>License:</strong> 
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+            Creative Commons Attribution 4.0 International (CC BY 4.0)</a>
+        </p>
+
+        <p>
+        <a href="{{ page.download_link }}" download>Download</a>
+    </div>
+
+    {% if page.steamMaps %}
+    <div class="maps-section">
+        <h3>Maps Featuring This Skybox</h3>
+        {% for map in page.steamMaps %}
+        <a href="{{ map.url }}" target="_blank" class="map-link">{{ map.name }}</a>
+        {% endfor %}
+    </div>
+    {% endif %}
+</article>
+

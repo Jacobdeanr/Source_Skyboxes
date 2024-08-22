@@ -1,50 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob Robbins' Skyboxes</title>
-    <link rel="icon" type="image/x-icon" href="favicon.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	
-    <meta name="description" content="Download high-quality skyboxes for your projects. Browse through various categories like Morning, Afternoon, Evening, and different weather conditions.">
-    <meta name="keywords" content="Jacob robbins, Firegod522, source engine, gmod, garrysmod, skyboxes, 3D skyboxes, free skyboxes, skybox download, 3D models, HDRI skyboxes, skybox textures, skybox library">
+---
+layout: default
+title: Jacob Robbins' Skyboxes
+---
+<select id="time-select" aria-label="Select Time of Day">
+    <optgroup label="Times of Day">
+        <option value="">All Times</option>
+        <option value="Morning">Morning</option>
+        <option value="Afternoon">Afternoon</option>
+        <option value="Evening">Evening</option>
+        <option value="Night">Night</option>
+    </optgroup>
+    <optgroup label="Other">
+        <option value="Misc">Misc</option>
+    </optgroup>
+</select>
 
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Jacob Robbins Skyboxes",
-      "url": "https://jacobdeanr.github.io/Source_Skyboxes/",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://jacobdeanr.github.io/Source_Skyboxes/search?query={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
-</head>
+<select id="weather-select">
+    <option value="">All Weather Conditions</option>
+    <option value="Clear">Clear</option>
+    <option value="Cloudy">Cloudy</option>
+    <option value="Hazy">Hazy</option>
+    <option value="Overcast">Overcast</option>
+</select>
 
-<body>
-
-    <div id="maintenance">
-    <h2>Temporarily down while the site is updating</h2>
+<div id="skybox-container">
+    {% for skybox in site.data.categories %}
+    <div class="skybox-item" data-categories="{{ skybox[1].categories | join: ',' }}">
+        <h3>{{ skybox[0] | split: '.7z' | first }}</h3>
+        <img src="{{ '/assets/images/thumbnails/' | relative_url }}{{ skybox[0] | split: '.7z' | first }}.jpg" alt="{{ skybox[0] | split: '.7z' | first }}">
+        <a href="{{ '/skyboxes/' | relative_url }}{{ skybox[0] | split: '.7z' | first }}" class="btn">View Details</a>
     </div>
+    {% endfor %}
+</div>
 
-    <h2>Contact Information</h2>
-    <div id="contact-info">
-        <p>
-            <a href="https://discord.gg/grqAfezMVs" target="_blank"><i class="fab fa-discord"></i>Join my Discord</a> |
-            <a href="https://steamcommunity.com/id/Jakobi_OBrien/" target="_blank"><i class="fab fa-steam"></i> Steam</a> |
-            <a href="https://github.com/Jacobdeanr" target="_blank"><i class="fab fa-github"></i>GitHub</a> 
-        </p>
-    </div> 
-
-    <script defer src="fetch_skyboxes.js?cb=${new Date().getTime()}"></script>
-    
-    <script src="banner.js?cb=${new Date().getTime()}"></script>
-    
-</body>
-</html>
+<script src="{{ '/assets/js/filter-skyboxes.js' | relative_url }}"></script>

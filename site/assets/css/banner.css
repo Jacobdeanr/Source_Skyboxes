@@ -1,0 +1,44 @@
+#banner {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px;
+    font-size: 1em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 17px; /* Adjust this padding if necessary */
+}
+
+#banner p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+#banner a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#banner a:hover {
+    text-decoration: underline;
+}
+
+#close-banner {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 20px;
+    color: #333;
+}
+
+#close-banner:hover {
+    color: #000;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
+</head>
+<body>
+    <a href="{{ '/' | relative_url }}" id="header-link">
+        <header>
+            <h1>Jacob Robbins' Skyboxes</h1>
+        </header>
+    </a>
+    {% include banner.html %}
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        {% include footer.html %}
+    </footer>
+    <script src="{{ '/assets/js/banner.js' | relative_url }}"></script>
+</body>
+</html>

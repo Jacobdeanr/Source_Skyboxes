@@ -7,51 +7,6 @@ body {
     text-align: center;
 }
 
-#banner {
-    background-color: #ffcc00;
-    color: #333;
-    padding: 10px;
-    font-size: 1em;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    padding-right: 17px; /* Adjust this padding if necessary */
-}
-
-#banner p {
-    margin: 0;
-    flex-grow: 1;
-}
-
-#banner a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-#banner a:hover {
-    text-decoration: underline;
-}
-
-#close-banner {
-    background: none;
-    border: none;
-    font-size: 1.2em;
-    cursor: pointer;
-    margin-left: 20px;
-    color: #333;
-}
-
-#close-banner:hover {
-    color: #000;
-}
-
 #header-link {
     text-decoration: none;
     display: block;
@@ -128,67 +83,6 @@ select {
 
 .skybox-item a:hover {
     background-color: #0056b3;
-}
-
-#details-container {
-    display: none;
-    padding: 20px;
-    text-align: left;
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-#details-container h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
-#details-container img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-#details-container p {
-    font-size: 1em;
-    color: #b0b0b0;
-    margin-bottom: 20px;
-}
-
-#details-container a {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.2s;
-}
-
-#details-container a:hover {
-    background-color: #0056b3;
-}
-
-#license-info {
-    margin-top: 20px;
-}
-
-#license-info img {
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-#license-info a {
-    color: #007bff;
-    text-decoration: none;
-    background-color: transparent;
-    padding:0px 0px;
-}
-
-#license-info a:hover {
-    text-decoration: underline;
-    background-color: transparent;
 }
 
 #preview-container {
