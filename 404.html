@@ -15,14 +15,25 @@ layout: default
     line-height: 1;
     letter-spacing: -1px;
   }
-  a {
+  h3 {
+    margin: 30px 0; 
     font-size: 4em;
-    color: #ffffff;
+    line-height: 1;
+  }
+  .container a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
     text-decoration: none;
+    transition: background-color 0.2s;
   }
 </style>
 
 <div class="container">
   <h1>404</h1>
-  <h1><a href="{{ '/' | relative_url }}">Go back to the home page.</a></h1>
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+  <a href="{{ '/' | relative_url }}">Click here to return to the home page</a>
 </div>
