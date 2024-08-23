@@ -16,7 +16,7 @@ This repository contains a comprehensive collection of skyboxes categorized by d
 
 To use the skyboxes from this repository:
 
-1. Browse the available categories on the [website](https://jacobdeanr.github.io/Source_Skyboxes/site/index.html).
+1. Browse the available categories on the [website](https://jacobdeanr.github.io/Source_Skyboxes/).
 2. Select and download the skybox that suits your project.
 3. Integrate the skybox into your 3D application using the provided parameters.
 
