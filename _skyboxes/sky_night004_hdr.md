@@ -36,4 +36,6 @@ download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/mast
 steamMaps:
   - name: Darktown
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=2537841802
+  - name: Clinic Remake
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=2663561109
 ---

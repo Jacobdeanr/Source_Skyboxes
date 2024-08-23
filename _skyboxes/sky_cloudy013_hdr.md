@@ -36,4 +36,6 @@ download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/mast
 steamMaps:
   - name: gm_southbeach_d
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=2991458245
+  - name: zs_lens
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3212681027
 ---

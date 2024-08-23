@@ -38,4 +38,6 @@ steamMaps:
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=2404844911
   - name: gm_breeze
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=2310516277
+  - name: zs_drifting
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=2952441195
 ---

@@ -394,6 +394,8 @@ sky_cloudy013_hdr.7z:
   steamMaps:
   - name: gm_southbeach_d
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=2991458245
+  - name: zs_lens
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3212681027
   sunParameters:
     sunAngle: "???"
     pitch: "?"
@@ -712,6 +714,8 @@ sky_night004_hdr.7z:
   steamMaps:
   - name: Darktown
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=2537841802
+  - name: Clinic Remake
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=2663561109
   sunParameters:
     sunAngle: 0 79 0
     pitch: "-60"
@@ -850,6 +854,8 @@ sky_night008_hdr.7z:
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=2404844911
   - name: gm_breeze
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=2310516277
+  - name: zs_drifting
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=2952441195
   sunParameters:
     sunAngle: "???"
     pitch: "?"

@@ -30,7 +30,11 @@ title: Jacob Robbins' Skyboxes
     {% for skybox in site.data.categories %}
     <div class="skybox-item" data-categories="{{ skybox[1].categories | join: ',' }}">
         <h3>{{ skybox[0] | split: '.7z' | first }}</h3>
-        <img src="{{ '/assets/images/thumbnails/' | relative_url }}{{ skybox[0] | split: '.7z' | first }}.jpg" alt="{{ skybox[0] | split: '.7z' | first }}">
+        <picture>
+            <source srcset="{{ '/assets/images/thumbnails/' | relative_url }}{{ skybox[0] | split: '.7z' | first }}.webp" type="image/webp" loading="lazy">
+            <source srcset="{{ '/assets/images/thumbnails/' | relative_url }}{{ skybox[0] | split: '.7z' | first }}.jpg" type="image/jpeg" loading="lazy">
+            <img src="{{ '/assets/images/thumbnails/' | relative_url }}{{ skybox[0] | split: '.7z' | first }}.jpg" alt="{{ skybox[0] | split: '.7z' | first }}" loading="lazy">
+        </picture>
         <a href="{{ '/skyboxes/' | relative_url }}{{ skybox[0] | split: '.7z' | first }}" class="btn">View Details</a>
     </div>
     {% endfor %}
