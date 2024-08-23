@@ -939,6 +939,36 @@ sky_night009_hdr.7z:
     - 0
     - 0
     - 0
+sky_night010_hdr.7z:
+  author: Jacob Robbins
+  description: ''
+  publishDate: '2024-08-23'
+  license: CC BY 4.0
+  categories:
+  - Night
+  - Clear
+  sunParameters:
+    sunAngle: 0 199 0
+    pitch: "-37"
+    brightness:
+    - 238   
+    - 231
+    - 213
+    - 15
+    ambience:
+    - 54   
+    - 61
+    - 65
+    - 10
+  fogParameters:
+    primaryFogColor:
+    - 5
+    - 5
+    - 5
+    secondaryFogColor:
+    - 0
+    - 0
+    - 0
 sky_overcast001_hdr.7z:
   author: Jacob Robbins
   description: ''
