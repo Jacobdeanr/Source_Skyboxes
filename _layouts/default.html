@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-    <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ page.title }}</title>
+        <meta name="description" content="A collection of high-quality skyboxes created by Jacob Robbins, suitable for various environments and lighting conditions.">
+        <meta name="keywords" content="skyboxes, Jacob Robbins, Source, game development, 3D, environment, lighting, textures">
+        <meta name="author" content="Jacob Robbins">
+        <meta property="og:title" content="{{ page.title }}">
+        <meta property="og:description" content="Explore the best skyboxes for your projects, created by Jacob Robbins.">
+        <meta property="og:image" content="{{ '/assets/images/high-res/sky_night009_hdr.jpg' | relative_url }}"> <!-- Replace with a representative image -->
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+        <meta name="twitter:card" content="summary_large_image">
+        <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+        <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
+    </head>
 <body>
     <a href="{{ '/' | relative_url }}" id="header-link">
         <header>
