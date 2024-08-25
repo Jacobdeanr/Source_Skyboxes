@@ -34,6 +34,6 @@ fogParameters:
   secondaryFogTextColor: "#FFFFFF"
 download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/master/sky_night005_hdr.7z
 steamMaps:
-  - name: jb_frostbite
-    url: https://store.steampowered.com/app/869480/Jabroni_Brawl_Episode_3/
+  - name: NO RETURN
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=2903782675
 ---

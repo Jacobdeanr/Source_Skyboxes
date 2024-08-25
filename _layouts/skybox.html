@@ -24,7 +24,6 @@ description: "Explore the {{ page.skybox_name }} skybox by Jacob Robbins, perfec
                 <th>Brightness</th>
                 <th>Ambient</th>
                 <th>Primary Fog Color</th>
-                <th>Secondary Fog Color</th>
             </tr>
             <tr>
                 <td>{{ page.sunParameters.sunAngle }}</td>
@@ -37,9 +36,6 @@ description: "Explore the {{ page.skybox_name }} skybox by Jacob Robbins, perfec
                 </td>
                 <td style="background-color: rgb({{ page.fogParameters.primaryFogColor | join: ', ' }}); color: {{ page.fogParameters.primaryFogTextColor }}">
                     {{ page.fogParameters.primaryFogColor | join: ' ' }}
-                </td>
-                <td style="background-color: rgb({{ page.fogParameters.secondaryFogColor | join: ', ' }}); color: {{ page.fogParameters.secondaryFogTextColor }}">
-                    {{ page.fogParameters.secondaryFogColor | join: ' ' }}
                 </td>
             </tr>
         </table>

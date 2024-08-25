@@ -35,5 +35,7 @@ fogParameters:
 download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/master/sky_sunny0002_hdr.7z
 steamMaps:
   - name: Flatsand
-    url: https://steamcommunity.com/sharedfiles/filedetails/?id=1707243677
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=1707243677\
+  - name: rp_downtown_v4e_v1
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3314552010
 ---

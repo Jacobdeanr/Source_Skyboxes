@@ -36,4 +36,6 @@ download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/mast
 steamMaps:
   - name: Section 9
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=3254605188
+  - name: All Ghillied Up
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3081810080
 ---

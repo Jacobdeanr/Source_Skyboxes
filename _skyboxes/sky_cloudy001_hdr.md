@@ -36,4 +36,6 @@ download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/mast
 steamMaps:
   - name: Spruceville
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=1486408313
+  - name: gm_lcl
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3304889604
 ---

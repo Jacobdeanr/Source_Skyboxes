@@ -33,4 +33,7 @@ fogParameters:
     - 0
   secondaryFogTextColor: "#FFFFFF"
 download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/master/sky_cloudy006_hdr.7z
+steamMaps:
+  - name: Overgrown
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3098427828
 ---

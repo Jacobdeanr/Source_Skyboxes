@@ -10,6 +10,8 @@ sky_cloudy001_hdr.7z:
   steamMaps:
   - name: Spruceville
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=1486408313
+  - name: gm_lcl
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3304889604
   sunParameters:
     sunAngle: "???"
     pitch: "?"
@@ -166,6 +168,9 @@ sky_cloudy006_hdr.7z:
   categories:
   - Afternoon
   - Cloudy
+  steamMaps:
+  - name: Overgrown
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3098427828
   sunParameters:
     sunAngle: 0 47 0
     pitch: "-75"
@@ -780,6 +785,9 @@ sky_night005_hdr.7z:
   steamMaps:
   - name: jb_frostbite
     url: https://store.steampowered.com/app/869480/Jabroni_Brawl_Episode_3/
+  steamMaps:
+  - name: NO RETURN
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=2903782675
   sunParameters:
     sunAngle: 0 125 0
     pitch: "-56"
@@ -1103,6 +1111,8 @@ sky_stormy02_hdr.7z:
   steamMaps:
   - name: Section 9
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=3254605188
+  - name: All Ghillied Up
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3081810080
   sunParameters:
     sunAngle: 0 142 0
     pitch: "-20"
@@ -1199,7 +1209,9 @@ sky_sunny0002_hdr.7z:
   - Clear
   steamMaps:
   - name: Flatsand
-    url: https://steamcommunity.com/sharedfiles/filedetails/?id=1707243677
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=1707243677\
+  - name: rp_downtown_v4e_v1
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3314552010
   sunParameters:
     sunAngle: "???"
     pitch: "?"
