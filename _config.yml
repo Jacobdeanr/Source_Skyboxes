@@ -7,6 +7,10 @@ github_username:  jekyll
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+
+sitemap:
+  filename: "sitemap.xml"
 
 collections:
   skyboxes:
