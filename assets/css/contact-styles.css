@@ -1,0 +1,23 @@
+#contact-info {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+#contact-info p {
+    margin: 0;
+}
+
+#contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.2s;
+}
+
+#contact-info a:hover {
+    color: #0056b3;
+}
+
+#contact-info i {
+    margin-right: 5px;
+}
