@@ -1812,6 +1812,9 @@ sky_ethereal01_hdr.7z:
   - Morning
   - Cloudy
   - Evening
+  steamMaps:
+  - name: Ethos 2
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3327278577
   sunParameters:
     sunAngle: 0 114 0
     pitch: "-19"

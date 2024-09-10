@@ -33,4 +33,7 @@ fogParameters:
     - 0
   secondaryFogTextColor: "#FFFFFF"
 download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/master/sky_ethereal01_hdr.7z
+steamMaps:
+  - name: Ethos 2
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3327278577
 ---
