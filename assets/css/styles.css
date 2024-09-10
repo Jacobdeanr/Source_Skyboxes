@@ -27,60 +27,12 @@ h1 {
     margin: 0;
 }
 
-select {
-    background-color: #1f1f1f;
-    color: #ffffff;
-    border: 1px solid #333;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 20px 0;
-}
-
-#skybox-container {
+.main-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
+    flex-wrap: nowrap;
+    width: 100%;
+}   
 
-.skybox-item {
-    background-color: #1e1e1e;
-    border: 1px solid #333;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    margin: 10px;
-    padding: 20px;
-    width: 400px;
-    text-align: center;
-    transition: transform 0.2s;
-}
-
-.skybox-item:hover {
-    transform: scale(1.05);
-}
-
-.skybox-item img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.skybox-item h3 {
-    font-size: 1.2em;
-    margin: 0 0 10px;
-    color: #e0e0e0;
-}
-
-.skybox-item a {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.2s;
-}
-
-.skybox-item a:hover {
-    background-color: #0056b3;
+.content-area {
+    flex: 1;
 }

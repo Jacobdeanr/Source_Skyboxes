@@ -1,0 +1,40 @@
+#skybox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    align-content: flex-start; 
+    max-height: 100%;
+}
+
+
+/* Skybox item styling */
+.skybox-item {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 425px;
+    height: 350px;
+    box-sizing: border-box;
+}
+
+.skybox-item:hover {
+    transform: scale(1.05);
+}
+
+.skybox-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.skybox-item h3 {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+    color: #e0e0e0;
+}

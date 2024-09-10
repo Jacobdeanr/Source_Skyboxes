@@ -1,0 +1,34 @@
+
+<div class="sidebar">
+    <div class="filter-group">
+        <label for="time-select">Time of Day:</label>
+        <select id="time-select" aria-label="Select Time of Day">
+        <option value="">--</option>
+        <option value="Morning">Morning</option>
+        <option value="Afternoon">Afternoon</option>
+        <option value="Evening">Evening</option>
+        <option value="Night">Night</option>
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <label for="weather-select">Weather Condition:</label>
+        <select id="weather-select" aria-label="Select Weather Condition">
+        <option value="">--</option>
+        <option value="Clear">Clear</option>
+        <option value="Cloudy">Cloudy</option>
+        <option value="Hazy">Hazy</option>
+        <option value="Overcast">Overcast</option>
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <label for="sort-select">Sort By:</label>
+        <select id="sort-select" aria-label="Sort Skyboxes">
+        <option value="name">Name</option>
+        <option value="date">Publish Date</option>
+        </select>
+    </div>
+</div>
+
+<script src="{{ '/assets/js/filter-skyboxes.js' | relative_url }}"></script>

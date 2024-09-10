@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
         <title>{{ page.title }}</title>
         <meta name="google-site-verification" content="NImwMdJbb2ijf2OZO9JHb7qb5jnp7rd5F5DrkEiuCNs" />
         <meta name="description" content="A collection of custom high-quality skyboxes created by Jacob Robbins designed for Source Engine games like Garry's Mod, Half-Life 2, and Team Fortress 2">
@@ -13,21 +14,27 @@
         <meta property="og:url" content="{{ site.url }}{{ page.url }}">
         <meta name="twitter:card" content="summary_large_image">
         <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-        <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
+        <link rel="stylesheet" href="{{ '/assets/css/sidebar.css' | relative_url }}">
+        <link rel="stylesheet" href="{{ '/assets/css/skybox-grid.css' | relative_url }}">
+        <link rel="stylesheet" href="{{ '/assets/css/buttons.css' | relative_url }}">
+        <link rel="stylesheet" href="{{ '/assets/css/footer-style.css' | relative_url }}">
+        <script type="text/javascript">
+            var elm=document.getElementsByTagName("html")[0];
+            elm.style.display="none";
+            document.addEventListener("DOMContentLoaded",function(event) {elm.style.display="block"; });
+        </script>
     </head>
-<body>
-    <a href="{{ '/' | relative_url }}" id="header-link">
+    <body>
         <header>
-            <h1>Jacob Robbins' Skybox Textures</h1>
+            {% include header.html %}
         </header>
-    </a>
-    {% include banner.html %}
-    <main>
-        {{ content }}
-    </main>
-    <footer>
-        {% include footer.html %}
-    </footer>
-    <script src="{{ '/assets/js/banner.js' | relative_url }}"></script>
-</body>
+        
+        <main class="content-area">
+            {{ content }}
+        </main>
+
+        <footer>
+            {% include footer.html %}
+        </footer>
+    </body>
 </html>

@@ -33,4 +33,7 @@ fogParameters:
     - 0
   secondaryFogTextColor: "#FFFFFF"
 download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/master/sky_night001_hdr.7z
+steamMaps:
+  - name: gm_akina
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=1583424746
 ---
