@@ -1,6 +1,6 @@
 ---
 layout: skybox
-title: sky_sunset008_hdr
+title: sky_sunset008_hdr - Skybox Texture
 skybox_name: sky_sunset008_hdr
 description: 
 author: Jacob Robbins
@@ -26,12 +26,12 @@ fogParameters:
     - 40
     - 51
     - 74
-  primaryFogTextColor: "#FFFFFF"
+  primaryFogColorTextColor: "#FFFFFF"
   secondaryFogColor:
     - 40
     - 51
     - 74
-  secondaryFogTextColor: "#FFFFFF"
+  secondaryFogColorTextColor: "#FFFFFF"
 download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/master/sky_sunset008_hdr.7z
 steamMaps:
   - name: Port Trajan

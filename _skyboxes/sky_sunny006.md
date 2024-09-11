@@ -1,6 +1,6 @@
 ---
 layout: skybox
-title: sky_sunny006
+title: sky_sunny006 - Skybox Texture
 skybox_name: sky_sunny006
 description: 
 author: Jacob Robbins
@@ -26,12 +26,12 @@ fogParameters:
     - 243
     - 240
     - 214
-  primaryFogTextColor: "#000000"
+  primaryFogColorTextColor: "#000000"
   secondaryFogColor:
     - 243
     - 240
     - 214
-  secondaryFogTextColor: "#000000"
+  secondaryFogColorTextColor: "#000000"
 download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/master/sky_sunny006.7z
 steamMaps:
   - name: Natalyas Cottage

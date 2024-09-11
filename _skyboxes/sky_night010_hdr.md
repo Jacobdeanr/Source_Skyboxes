@@ -1,6 +1,6 @@
 ---
 layout: skybox
-title: sky_night010_hdr
+title: sky_night010_hdr - Skybox Texture
 skybox_name: sky_night010_hdr
 description: 
 author: Jacob Robbins
@@ -26,11 +26,11 @@ fogParameters:
     - 5
     - 5
     - 5
-  primaryFogTextColor: "#FFFFFF"
+  primaryFogColorTextColor: "#FFFFFF"
   secondaryFogColor:
     - 0
     - 0
     - 0
-  secondaryFogTextColor: "#FFFFFF"
+  secondaryFogColorTextColor: "#FFFFFF"
 download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/master/sky_night010_hdr.7z
 ---

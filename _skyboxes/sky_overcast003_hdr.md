@@ -1,6 +1,6 @@
 ---
 layout: skybox
-title: sky_overcast003_hdr
+title: sky_overcast003_hdr - Skybox Texture
 skybox_name: sky_overcast003_hdr
 description: 
 author: Jacob Robbins
@@ -26,11 +26,11 @@ fogParameters:
     - 87
     - 106
     - 128
-  primaryFogTextColor: "#FFFFFF"
+  primaryFogColorTextColor: "#FFFFFF"
   secondaryFogColor:
     - 87
     - 106
     - 128
-  secondaryFogTextColor: "#FFFFFF"
+  secondaryFogColorTextColor: "#FFFFFF"
 download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/master/sky_overcast003_hdr.7z
 ---

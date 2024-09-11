@@ -1,6 +1,6 @@
 ---
 layout: skybox
-title: sky_night008_hdr
+title: sky_night008_hdr - Skybox Texture
 skybox_name: sky_night008_hdr
 description: 
 author: Jacob Robbins
@@ -26,12 +26,12 @@ fogParameters:
     - 0
     - 0
     - 0
-  primaryFogTextColor: "#FFFFFF"
+  primaryFogColorTextColor: "#FFFFFF"
   secondaryFogColor:
     - 0
     - 0
     - 0
-  secondaryFogTextColor: "#FFFFFF"
+  secondaryFogColorTextColor: "#FFFFFF"
 download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/master/sky_night008_hdr.7z
 steamMaps:
   - name: zs_beyond (v2)

@@ -1,6 +1,6 @@
 ---
 layout: skybox
-title: sky_sunny007_hdr
+title: sky_sunny007_hdr - Skybox Texture
 skybox_name: sky_sunny007_hdr
 description: 
 author: Jacob Robbins
@@ -26,11 +26,14 @@ fogParameters:
     - 0
     - 0
     - 0
-  primaryFogTextColor: "#FFFFFF"
+  primaryFogColorTextColor: "#FFFFFF"
   secondaryFogColor:
     - 0
     - 0
     - 0
-  secondaryFogTextColor: "#FFFFFF"
+  secondaryFogColorTextColor: "#FFFFFF"
 download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/master/sky_sunny007_hdr.7z
+steamMaps:
+  - name: (ZS) Rust
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=2947120989
 ---

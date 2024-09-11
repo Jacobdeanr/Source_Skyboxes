@@ -1377,6 +1377,9 @@ sky_sunny007_hdr.7z:
   categories:
   - Afternoon
   - Cloudy
+  steamMaps:
+  - name: (ZS) Rust
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=2947120989
   sunParameters:
     sunAngle: "???"
     pitch: "?"

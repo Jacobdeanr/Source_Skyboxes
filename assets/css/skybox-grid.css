@@ -18,7 +18,10 @@
     padding: 20px;
     text-align: center;
     transition: transform 0.2s;
-    width: 425px;
+    flex: auto;
+    min-width: 400px;
+    max-width: 500px;
+    width: 400px;
     height: 350px;
     box-sizing: border-box;
 }

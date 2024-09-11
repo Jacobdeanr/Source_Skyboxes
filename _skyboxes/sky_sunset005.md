@@ -1,6 +1,6 @@
 ---
 layout: skybox
-title: sky_sunset005
+title: sky_sunset005 - Skybox Texture
 skybox_name: sky_sunset005
 description: 
 author: Jacob Robbins
@@ -26,12 +26,12 @@ fogParameters:
     - 255
     - 251
     - 164
-  primaryFogTextColor: "#000000"
+  primaryFogColorTextColor: "#000000"
   secondaryFogColor:
     - 0
     - 0
     - 0
-  secondaryFogTextColor: "#FFFFFF"
+  secondaryFogColorTextColor: "#FFFFFF"
 download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/master/sky_sunset005.7z
 steamMaps:
   - name: Vacant (MW19)

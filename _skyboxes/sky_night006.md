@@ -1,6 +1,6 @@
 ---
 layout: skybox
-title: sky_night006
+title: sky_night006 - Skybox Texture
 skybox_name: sky_night006
 description: 
 author: Jacob Robbins
@@ -26,12 +26,12 @@ fogParameters:
     - 27
     - 47
     - 70
-  primaryFogTextColor: "#FFFFFF"
+  primaryFogColorTextColor: "#FFFFFF"
   secondaryFogColor:
     - 27
     - 47
     - 70
-  secondaryFogTextColor: "#FFFFFF"
+  secondaryFogColorTextColor: "#FFFFFF"
 download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/master/sky_night006.7z
 steamMaps:
   - name: Black Mesa North

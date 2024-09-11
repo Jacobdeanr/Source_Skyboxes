@@ -1,6 +1,6 @@
 ---
 layout: skybox
-title: sky_stormy03_hdr
+title: sky_stormy03_hdr - Skybox Texture
 skybox_name: sky_stormy03_hdr
 description: 
 author: Jacob Robbins
@@ -26,12 +26,12 @@ fogParameters:
     - 80
     - 65
     - 56
-  primaryFogTextColor: "#FFFFFF"
+  primaryFogColorTextColor: "#FFFFFF"
   secondaryFogColor:
     - 0
     - 0
     - 0
-  secondaryFogTextColor: "#FFFFFF"
+  secondaryFogColorTextColor: "#FFFFFF"
 download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/master/sky_stormy03_hdr.7z
 steamMaps:
   - name: Revival | City of Ash | Event Map

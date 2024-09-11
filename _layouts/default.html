@@ -18,6 +18,11 @@
         <link rel="stylesheet" href="{{ '/assets/css/skybox-grid.css' | relative_url }}">
         <link rel="stylesheet" href="{{ '/assets/css/buttons.css' | relative_url }}">
         <link rel="stylesheet" href="{{ '/assets/css/footer-style.css' | relative_url }}">
+        
+        {% if page.layout == "skybox" %}
+        <link rel="stylesheet" href="{{ '/assets/css/skybox-details.css' | relative_url }}">
+        {% endif %}
+        
         <script type="text/javascript">
             var elm=document.getElementsByTagName("html")[0];
             elm.style.display="none";

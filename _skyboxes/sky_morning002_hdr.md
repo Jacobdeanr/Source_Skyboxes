@@ -1,6 +1,6 @@
 ---
 layout: skybox
-title: sky_morning002_hdr
+title: sky_morning002_hdr - Skybox Texture
 skybox_name: sky_morning002_hdr
 description: 
 author: Jacob Robbins
@@ -26,12 +26,12 @@ fogParameters:
     - 30
     - 40
     - 55
-  primaryFogTextColor: "#FFFFFF"
+  primaryFogColorTextColor: "#FFFFFF"
   secondaryFogColor:
     - 0
     - 0
     - 0
-  secondaryFogTextColor: "#FFFFFF"
+  secondaryFogColorTextColor: "#FFFFFF"
 download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/master/sky_morning002_hdr.7z
 steamMaps:
   - name: Lights (Mostly) Out
