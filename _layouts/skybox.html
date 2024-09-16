@@ -3,6 +3,10 @@ layout: default
 title: "{{ page.skybox_name }} - Jacob Robbins' Skybox Textures"
 description: "Explore the {{ page.skybox_name }} skybox by Jacob Robbins, perfect for {{ page.categories | join: ', ' }} environments."
 ---
+<head>
+    <meta property="og:image" content="{{ '/assets/images/high-res/' | relative_url }}{{ page.skybox_name }}.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
 <article>
     <div class="skybox-details">
         <h2>{{ page.skybox_name }}</h2>
