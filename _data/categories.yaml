@@ -1249,23 +1249,23 @@ sky_sunny003_hdr.7z:
   - name: Remnants
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=2999037900
   sunParameters:
-    sunAngle: 0 255 0
-    pitch: "-40"
+    sunAngle: 0 256 0
+    pitch: "-30"
     brightness:
     - 255
     - 244
-    - 223
-    - 600
+    - 221
+    - 500
     ambience:
-    - 48
-    - 72
-    - 103
-    - 400
+    - 121
+    - 152
+    - 193
+    - 350
   fogParameters:
     primaryFogColor:
-    - 0
-    - 0
-    - 0
+    - 121
+    - 152
+    - 193
     secondaryFogColor:
     - 0
     - 0

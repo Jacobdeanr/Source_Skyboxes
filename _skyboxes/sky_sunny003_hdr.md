@@ -7,26 +7,26 @@ author: Jacob Robbins
 publishDate: 2012-08-04
 license: CC BY 4.0
 sunParameters:
-  sunAngle: "0 255 0"
-  pitch: "-40"
+  sunAngle: "0 256 0"
+  pitch: "-30"
   brightness:
     - 255
     - 244
-    - 223
-    - 600
+    - 221
+    - 500
   brightnessTextColor: "#000000"
   ambience:
-    - 48
-    - 72
-    - 103
-    - 400
-  ambienceTextColor: "#FFFFFF"
+    - 121
+    - 152
+    - 193
+    - 350
+  ambienceTextColor: "#000000"
 fogParameters:
   primaryFogColor:
-    - 0
-    - 0
-    - 0
-  primaryFogColorTextColor: "#FFFFFF"
+    - 121
+    - 152
+    - 193
+  primaryFogColorTextColor: "#000000"
   secondaryFogColor:
     - 0
     - 0
