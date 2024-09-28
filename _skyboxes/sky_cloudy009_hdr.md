@@ -36,6 +36,8 @@ download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/mast
 steamMaps:
   - name: jb_skyscratchers
     url: https://store.steampowered.com/app/869480/Jabroni_Brawl_Episode_3/
+  - name: rp_downtown_v4e_v1
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3314552010
   - name: Christophsis Towers
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=3331277550
 ---
