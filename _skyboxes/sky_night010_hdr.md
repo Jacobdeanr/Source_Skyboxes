@@ -33,4 +33,7 @@ fogParameters:
     - 0
   secondaryFogColorTextColor: "#FFFFFF"
 download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/master/sky_night010_hdr.7z
+steamMaps:
+  - name: Skywatching
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3359381654
 ---
