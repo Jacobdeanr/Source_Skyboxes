@@ -33,4 +33,7 @@ fogParameters:
     - 0
   secondaryFogColorTextColor: "#FFFFFF"
 download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/master/sky_cloudy017_hdr.7z
+steamMaps:
+  - name: BbiCOTKA Remastered
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3407479980
 ---

@@ -529,6 +529,9 @@ sky_cloudy017_hdr.7z:
   - Morning
   - Afternoon
   - Cloudy
+  steamMaps:
+  - name: BbiCOTKA Remastered
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3407479980
   sunParameters:
     sunAngle: 0 116 0
     pitch: "-50"
@@ -1187,6 +1190,8 @@ sky_stormy03_hdr.7z:
   steamMaps:
   - name: Revival | City of Ash | Event Map
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=3272379514
+  - name: zs_sawdust_v1
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3441411282
   sunParameters:
     sunAngle: 0 -48 0
     pitch: "-28"

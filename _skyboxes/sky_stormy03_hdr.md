@@ -36,4 +36,6 @@ download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/mast
 steamMaps:
   - name: Revival | City of Ash | Event Map
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=3272379514
+  - name: zs_sawdust_v1
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3441411282
 ---
