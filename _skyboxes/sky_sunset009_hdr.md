@@ -33,4 +33,7 @@ fogParameters:
     - 0
   secondaryFogColorTextColor: "#FFFFFF"
 download_link: https://raw.githubusercontent.com/Jacobdeanr/Source_Skyboxes/master/sky_sunset009_hdr.7z
+steamMaps:
+  - name: Villa 118
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3419398190
 ---
