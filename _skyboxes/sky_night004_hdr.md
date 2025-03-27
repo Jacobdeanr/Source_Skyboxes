@@ -38,4 +38,6 @@ steamMaps:
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=2537841802
   - name: Clinic Remake
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=2663561109
+  - name: The Snow Per Unit
+    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3452943377
 ---
