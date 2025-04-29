@@ -6,7 +6,7 @@
             <h3>{{ skybox[0] | split: '.7z' | first }}</h3>
             <picture>
                 <source srcset="{{ '/assets/images/thumbnails/' | relative_url }}{{ skybox[0] | split: '.7z' | first }}.webp" type="image/webp" loading="lazy" width="400" height="225">
-                <source srcset="{{ '/assets/images/thumbnails/' | relative_url }}{{ skybox[0] | split: '.7z' | first }}.jpg" type="image/jpeg" loading="lazy" width="400" height="225">
+                <source srcset="{{ '/assets/images/thumbnails/' | relative_url }}{{ skybox[0] | split: '.7z' | first }}.avif" type="image/jpeg" loading="lazy" width="400" height="225">
                 <img src="{{ '/assets/images/thumbnails/' | relative_url }}{{ skybox[0] | split: '.7z' | first }}.jpg" alt="{{ skybox[0] | split: '.7z' | first }}" loading="lazy" width="400" height="225">
             </picture>
             <a href="{{ '/skyboxes/' | relative_url }}{{ skybox[0] | split: '.7z' | first }}" class="btn">View Details</a>

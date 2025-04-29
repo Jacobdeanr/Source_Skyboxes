@@ -1,24 +1,52 @@
 @echo off
-REM Define directories relative to the current folder
-set "highResFolder=assets\images\high-res"
-set "thumbFolder=assets\images\thumbnails"
+REM Define directories
+set "highRes=assets\images\high-res"
+set "thumbs=assets\images\thumbnails"
+set "thumbquality=85"
 
-REM Create thumbnails folder if it doesn't exist
-if not exist "%thumbFolder%" mkdir "%thumbFolder%"
+REM Create thumbnail dir if needed
+if not exist "%thumbs%" mkdir "%thumbs%"
 
-REM Process each JPEG file in the high-res folder
-for %%F in ("%highResFolder%\*.jpg") do (
-    echo Processing %%~nxF...
-    REM Resize and output as JPEG
-    magick "%%F" -resize 400x225 "%thumbFolder%\%%~nF.jpg"
-    REM Resize and output as WebP
-    magick "%%F" -resize 400x225 "%thumbFolder%\%%~nF.webp"
-)
+REM Thumbnail JPEGs compression
+echo Processing jpg thumbnails
+magick mogrify ^
+  -path "%thumbs%" ^
+  -resize 400x225 ^
+  -quality %thumbquality% ^
+  -format jpg ^
+  "%highRes%\*.jpg"
 
-REM Mogrify both JPEG and WebP files in the thumbnail folder
-for %%e in (jpg webp) do (
-    magick mogrify -quality 85 "%thumbFolder%\*.%%e"
-)
+REM Thumbnail JPEGs → AVIF
+echo Processing avif thumbnails
+magick mogrify ^
+  -path "%thumbs%" ^
+  -resize 400x225 ^
+  -quality %thumbquality% ^
+  -format avif ^
+  "%highRes%\*.jpg"
+
+REM Thumbnail JPEGs → WebP
+echo Processing webp thumbnails
+magick mogrify ^
+  -path "%thumbs%" ^
+  -resize 400x225 ^
+  -quality %thumbquality% ^
+  -format webp ^
+  "%highRes%\*.jpg"
+
+REM High-res JPEGs → WebP
+echo Processing webp full Res
+magick mogrify ^
+  -format webp ^
+  -quality 90 ^
+  "%highRes%\*.jpg"
+
+REM High-res JPEGs → AVIF
+echo Processing avif full Res
+magick mogrify ^
+  -format avif ^
+  -quality 90 ^
+  "%highRes%\*.jpg"
 
 REM Build Site
 ruby generate_skybox_pages.rb

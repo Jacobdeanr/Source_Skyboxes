@@ -9,8 +9,12 @@ description: "Explore the {{ page.skybox_name }} skybox by Jacob Robbins, perfec
 </head>
 <article>
     <div class="skybox-details">
-        <h2>{{ page.skybox_name }}</h2>
-        <img src="{{ '/assets/images/high-res/' | relative_url }}{{ page.skybox_name }}.jpg" alt="{{ page.skybox_name }}" width="800" height="450">
+        <h2>{{ page.skybox_name }}</h2>       
+        <picture>
+            <source srcset="{{ '/assets/images/high-res/' | relative_url }}{{ page.skybox_name }}.webp" alt="{{ page.skybox_name }}" width="800" height="450">
+            <source srcset="{{ '/assets/images/high-res/' | relative_url }}{{ page.skybox_name }}.avif" alt="{{ page.skybox_name }}" width="800" height="450">
+            <img src="{{ '/assets/images/high-res/' | relative_url }}{{ page.skybox_name }}.jpg" alt="{{ page.skybox_name }}" width="800" height="450">
+        </picture>
         <table>
             <tr>
                 <th>Sun Angle</th>
