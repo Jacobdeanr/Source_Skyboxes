@@ -1798,6 +1798,36 @@ sky_sunset010_hdr.7z:
     - 0
     - 0
     - 0
+sky_sunset011_hdr.7z:
+  author: Jacob Robbins
+  description: ''
+  publishDate: '2025-05-08'
+  license: CC BY 4.0
+  categories:
+  - Evening
+  - Sunny
+  sunParameters:
+    sunAngle: 0 330 0
+    pitch: "-1"
+    brightness:
+    - 253
+    - 163
+    - 96
+    - 150
+    ambience:
+    - 168
+    - 179
+    - 196
+    - 60
+  fogParameters:
+    primaryFogColor:
+    - 159
+    - 114
+    - 111
+    secondaryFogColor:
+    - 99
+    - 89
+    - 99
 sky_wildfire01_hdr.7z:
   author: Jacob Robbins
   description: ''
