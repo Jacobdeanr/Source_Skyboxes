@@ -8,7 +8,7 @@ publishDate: 2025-05-08
 license: CC BY 4.0
 sunParameters:
   sunAngle: "0 330 0"
-  pitch: "-1"
+  pitch: "-5"
   brightness:
     - 253
     - 163
