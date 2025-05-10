@@ -1605,7 +1605,40 @@ sky_sunset004_hdr.7z:
     - 0
     - 0
     - 0
-sky_sunset005.7z:
+#sky_sunset005.7z:
+#  author: Jacob Robbins
+#  description: ''
+#  publishDate: '2016-01-27'
+#  license: CC BY 4.0
+#  categories:
+#  - Evening
+#  - Cloudy
+#  steamMaps:
+#  - name: Vacant (MW19)
+#    url: https://steamcommunity.com/sharedfiles/filedetails/?id=3245626404
+#  sunParameters:
+#    sunAngle: 0 36 0
+#    pitch: "-25"
+#    brightness:
+#    - 254
+#    - 193
+#    - 133
+#    - 450
+#    ambience:
+#    - 0
+#    - 0
+#    - 0
+#    - 0
+#  fogParameters:
+#    primaryFogColor:
+#    - 255
+#    - 251
+#    - 164
+#    secondaryFogColor:
+#    - 0
+#    - 0
+#    - 0
+sky_sunset005_hdr.7z:
   author: Jacob Robbins
   description: ''
   publishDate: '2016-01-27'
@@ -1618,26 +1651,26 @@ sky_sunset005.7z:
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=3245626404
   sunParameters:
     sunAngle: 0 36 0
-    pitch: "-25"
+    pitch: "-8"
     brightness:
-    - 254
-    - 193
-    - 133
-    - 450
+    - 233
+    - 168
+    - 103
+    - 550
     ambience:
-    - 0
-    - 0
-    - 0
-    - 0
+    - 164
+    - 179
+    - 200
+    - 70
   fogParameters:
     primaryFogColor:
-    - 255
-    - 251
-    - 164
+    - 82
+    - 85
+    - 90
     secondaryFogColor:
-    - 0
-    - 0
-    - 0
+    - 82
+    - 85
+    - 90
 sky_sunset006_hdr.7z:
   author: Jacob Robbins
   description: ''
