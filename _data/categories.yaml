@@ -1193,23 +1193,23 @@ sky_stormy02_hdr.7z:
   - name: All Ghillied Up
     url: https://steamcommunity.com/sharedfiles/filedetails/?id=3081810080
   sunParameters:
-    sunAngle: 0 142 0
-    pitch: "-20"
+    sunAngle: 0 58 0
+    pitch: "-37"
     brightness:
-    - 247
-    - 247
-    - 210
-    - 500
+    - 203
+    - 198
+    - 178
+    - 25
     ambience:
-    - 123
-    - 132
-    - 129
+    - 87 
+    - 92
+    - 89
     - 300
   fogParameters:
     primaryFogColor:
-    - 0
-    - 0
-    - 0
+    - 84 
+    - 86
+    - 82
     secondaryFogColor:
     - 0
     - 0
