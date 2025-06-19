@@ -1,0 +1,43 @@
+{
+  "author": "Jacob Robbins",
+  "description": "",
+  "publishDate": "2025-06-19",
+  "license": "CC BY 4.0",
+  "categories": [
+    "Morning",
+    "Clear"
+  ],
+  "timeOfDay": "Morning",
+  "weatherCondition": "Clear",
+  "steamMaps": [],
+  "sunParameters": {
+    "sunAngle": "0 21 0",
+    "pitch": "-12",
+    "brightness": [
+      183.0,
+      173.0,
+      157.0,
+      50.0
+    ],
+    "ambience": [
+      163.0,
+      154.0,
+      142.0,
+      200.0
+    ]
+  },
+  "fogParameters": {
+    "primaryFogColor": [
+      60.0,
+      70.0,
+      82.0,
+      255.0
+    ],
+    "secondaryFogColor": [
+      81.0,
+      83.0,
+      87.0,
+      255.0
+    ]
+  }
+}
