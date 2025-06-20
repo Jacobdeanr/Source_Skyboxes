@@ -2,6 +2,7 @@
 
 import { ComponentPropsWithoutRef } from 'react';
 import Link from 'next/link';
+import { withBase } from '@/app/lib/basepath';
 
 interface ViewDetailsButtonProps extends ComponentPropsWithoutRef<typeof Link> {
   label?: string;
@@ -32,7 +33,7 @@ export default function ViewDetailsButton({
       `}
     >
       <div className="flex items-center gap-2">
-        <img src="/Source_Skyboxes_NextJS/icons/maximize.svg" alt="" className="invert w-3 h-3 text-neutral-300 group-hover:text-white transition-colors " />
+        <img src={`${withBase(`/icons/maximize.svg`)}`} alt="" className="invert w-3 h-3 text-neutral-300 group-hover:text-white transition-colors " />
         {label}
       </div>
     </Link>

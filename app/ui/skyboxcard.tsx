@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Modal from './modal';
 import { useState } from 'react';
+import { withBase } from '@/app/lib/basepath';
 
 import type { Sun } from './sunparameters';
 
@@ -19,7 +20,7 @@ interface SkyboxCardProps {
 export default function SkyboxCard({ slug, meta }: SkyboxCardProps) {
   const [open, setOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-  const imgBase = `/Source_Skyboxes_NextJS/skyboxes/${slug}/images`;
+  const imgBase = withBase(`/skyboxes/${slug}/images`);
   
   const displayTitle = meta?.title || slug
 

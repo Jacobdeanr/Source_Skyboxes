@@ -4,11 +4,12 @@ import Meta from './meta';
 import SunParams from './sunparameters';
 import FogParams from './fogparameters';
 import ViewDetailsButton from './view-details-button';
+import { withBase } from '@/app/lib/basepath';
 
 // Simple chevron icon component
 const ChevronIcon = ({ isOpen }: { isOpen: boolean }) => (
   <img 
-    src="/Source_Skyboxes_NextJS/icons/right-thin-chevron.svg" 
+    src={`${withBase(`/icons/right-thin-chevron.svg`)}`} 
     alt="" 
     className={`invert w-3 h-3 transition-transform ${isOpen ? 'rotate-90' : 'rotate-270'}`} 
   />
@@ -48,10 +49,10 @@ function useModalBehaviour(onClose: () => void) {
 export default function Modal({ slug, onClose }: { slug: string; onClose: () => void }) {
   const [meta, setMeta] = useState<Meta | null>(null);
   const [isExpanded, setIsExpanded] = useState(false);
-  const imgBase = `/Source_Skyboxes_NextJS/skyboxes/${slug}/images`;
+  const imgBase = `${withBase(`/skyboxes/${slug}/images`)}`;
   
   useEffect(() => { 
-    fetch(`/Source_Skyboxes_NextJS/data/${slug}.json`)
+    fetch(`${withBase(`/data/${slug}.json`)}`)
       .then(r => r.ok ? r.json() : null)
       .then(setMeta); 
   }, [slug]);

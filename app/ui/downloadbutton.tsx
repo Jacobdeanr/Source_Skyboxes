@@ -1,5 +1,5 @@
 'use client';
-
+import { withBase } from '@/app/lib/basepath';
 import type { ComponentPropsWithoutRef } from 'react';
 
 interface DownloadButtonProps extends ComponentPropsWithoutRef<'a'> {
@@ -43,7 +43,7 @@ export default function DownloadButton({
       
       <span className="relative flex items-center gap-2">
         <img 
-          src="/Source_Skyboxes_NextJS/icons/download.svg" 
+          src={`${withBase(`/icons/download.svg`)}`} 
           alt="" 
           className="w-4 h-4 shrink-0 opacity-90 group-hover:opacity-100 transition-opacity invert brightness-0"
         />
