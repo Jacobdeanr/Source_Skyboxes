@@ -5,16 +5,11 @@ import Modal from './modal';
 import { useState } from 'react';
 import { withBase } from '@/app/lib/basepath';
 
-import type { Sun } from './sunparameters';
+import type { SkyboxMeta } from '../types/skybox';
 
 interface SkyboxCardProps {
   slug: string;
-  meta: {
-    title?: string;
-    timeOfDay?: string;
-    weatherCondition?: string;
-    sunParameters?: Sun;
-  };
+  meta: SkyboxMeta;
 }
 
 export default function SkyboxCard({ slug, meta }: SkyboxCardProps) {

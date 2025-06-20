@@ -1,36 +1,21 @@
 
 import { useMemo, ReactElement } from 'react';
-import SkyboxCard from './skyboxcard';
-
-// Define the SortOption type matching the one in header.tsx / page.tsx
+import type { SkyboxMeta } from '../types/skybox';
 import { SortOption } from './sort-types';
-
-// Import Sun type from SunParams component
-import type { Sun } from './sunparameters';
+import SkyboxCard from './skyboxcard';
 
 const TIME_OF_DAY_ORDER = ['Morning', 'Afternoon', 'Evening', 'Night', 'Other'];
 const WEATHER_CONDITIONS_ORDER = ['Clear', 'Cloudy', 'Hazy', 'Overcast', 'Other'];
-
-// Helper types
-interface SkyboxMeta {
-  timeOfDay?: string;
-  weatherCondition?: string;
-  sunParameters?: Sun;
-  title?: string;
-}
 
 // Helper functions
 function getSkyboxCategory(slug: string, meta: Record<string, SkyboxMeta>, category: 'timeOfDay' | 'weatherCondition'): string {
   return meta[slug]?.[category] || 'Other';
 }
 
-function filterByQuery(slugs: string[], meta: Record<string, SkyboxMeta>, query: string): string[] {
+function filterByQuery(slugs: string[], query: string): string[] {
   if (!query) return slugs;
   const q = query.toLowerCase();
-  return slugs.filter(slug => 
-    slug.includes(q) || 
-    meta[slug]?.title?.toLowerCase().includes(q)
-  );
+  return slugs.filter(slug => slug.toLowerCase().includes(q));
 }
 
 function sortSkyboxesByPitch(slugs: string[], meta: Record<string, SkyboxMeta>): string[] {
@@ -84,18 +69,15 @@ function groupAndSortSkyboxes(
     }));
 }
 
-export default function SkyboxGrid({
-  slugs,
-  meta,
-  sort = 'time-of-day',
-  query,
-}: {
+interface SkyboxGridProps {
   slugs: string[];
   meta: Record<string, SkyboxMeta>;
   sort?: SortOption;
   query: string;
-}): ReactElement {
-  const visible = useMemo(() => filterByQuery(slugs, meta, query), [slugs, meta, query]);
+}
+
+export default function SkyboxGrid({ slugs, meta, sort = 'time-of-day', query }: SkyboxGridProps): ReactElement {
+  const visible = useMemo(() => filterByQuery(slugs, query), [slugs, query]);
 
   // Group skyboxes by time of day or weather conditions
   const groupedSkyboxes = useMemo(() => {
