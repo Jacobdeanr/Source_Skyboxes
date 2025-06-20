@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import Meta from './meta';
+import type { SkyboxMeta } from '../types/skybox';
 import SunParams from './sunparameters';
 import FogParams from './fogparameters';
 import ViewDetailsButton from './view-details-button';
@@ -14,15 +14,6 @@ const ChevronIcon = ({ isOpen }: { isOpen: boolean }) => (
     className={`invert w-3 h-3 transition-transform ${isOpen ? 'rotate-90' : 'rotate-270'}`} 
   />
 );
-
-type MapLink = { name: string; url: string };
-type Meta = {
-  author?: string; publishDate?: string; timeOfDay?: string; weatherCondition?: string; description?: string;
-  steamMaps?: MapLink[];
-  sunParameters?: any;
-  fogParameters?: any;
-  fileSize?: string;
-};
 
 function useModalBehaviour(onClose: () => void) {
   useEffect(() => {
@@ -46,17 +37,9 @@ function useModalBehaviour(onClose: () => void) {
   }, [onClose]);
 }
 
-export default function Modal({ slug, onClose }: { slug: string; onClose: () => void }) {
-  const [meta, setMeta] = useState<Meta | null>(null);
+export default function Modal({ slug, meta, onClose }: { slug: string; meta: SkyboxMeta; onClose: () => void }) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const imgBase = `${withBase(`/skyboxes/${slug}/images`)}`;
-  
-  useEffect(() => { 
-    fetch(`${withBase(`/data/${slug}.json`)}`)
-      .then(r => r.ok ? r.json() : null)
-      .then(setMeta); 
-  }, [slug]);
-  
+  const imgBase = withBase(`/skyboxes/${slug}/images`);
   useModalBehaviour(onClose);
   
   const toggleExpand = () => setIsExpanded(!isExpanded);

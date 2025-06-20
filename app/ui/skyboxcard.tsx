@@ -7,16 +7,12 @@ import { withBase } from '@/app/lib/basepath';
 
 import type { SkyboxMeta } from '../types/skybox';
 
-interface SkyboxCardProps {
-  slug: string;
-  meta: SkyboxMeta;
-}
-
-export default function SkyboxCard({ slug, meta }: SkyboxCardProps) {
+//Slug is the name of the sky (i.e. sky_sunny001)
+//Meta is the metadata for the sky (i.e. author, description, publishDate, license, timeOfDay, weatherCondition, steamMaps, sunParameters, etc)
+export default function SkyboxCard({ slug, meta }: { slug: string; meta: SkyboxMeta }) {
   const [open, setOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const imgBase = withBase(`/skyboxes/${slug}/images`);
-  
   const displayTitle = slug
 
   return (
@@ -111,7 +107,7 @@ export default function SkyboxCard({ slug, meta }: SkyboxCardProps) {
         </div>
       </button>
 
-      {open && <Modal slug={slug} onClose={() => setOpen(false)} />}
+      {open && <Modal slug={slug} meta={meta} onClose={() => setOpen(false)} />}
     </>
   );
 }
