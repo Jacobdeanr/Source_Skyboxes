@@ -12,6 +12,11 @@ export interface SkyboxMeta {
       brightness: number[];
       ambience: number[];
     };
+    fogParameters?: {
+      primaryFogColor?: number[];
+      secondaryFogColor?: number[];
+    };
+    fileSize?: string;
 }
 
 export type SkyboxIndex = Record<string, SkyboxMeta>;
