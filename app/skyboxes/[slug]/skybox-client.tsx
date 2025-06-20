@@ -1,4 +1,5 @@
 'use client';
+import { withBase } from '@/app/lib/basepath';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -6,7 +7,6 @@ import SunParams from '@/app/ui/sunparameters';
 import FogParams from '@/app/ui/fogparameters';
 import MapList from '@/app/ui/maplist';
 import DownloadButton from '@/app/ui/downloadbutton';
-import TechnicalDetails from '@/app/ui/technical-details';
 
 interface SkyboxClientProps {
   slug: string;
@@ -17,7 +17,7 @@ interface SkyboxClientProps {
 export default function SkyboxClient({ slug, skyboxData, previewCount }: SkyboxClientProps) {
   const [activeImage, setActiveImage] = useState(1);
   console.log(activeImage)
-  const imgBase = `/Source_Skyboxes_NextJS/skyboxes/${slug}/images`;
+  const imgBase = withBase(`/skyboxes/${slug}/images`);
   // Generate array of preview numbers based on previewCount
   const previews = Array.from({ length: previewCount }, (_, i) => i + 1);
 
@@ -30,7 +30,7 @@ export default function SkyboxClient({ slug, skyboxData, previewCount }: SkyboxC
           className="inline-flex items-center text-neutral-400 hover:text-white transition-colors mb-6"
         >
           <img 
-            src="/Source_Skyboxes_NextJS/icons/back.svg" 
+            src={withBase(`/icons/back.svg`)} 
             alt="" 
             className="invert w-5 h-5 mr-2" 
           />
@@ -74,7 +74,7 @@ export default function SkyboxClient({ slug, skyboxData, previewCount }: SkyboxC
             </div>
           </div>
           <DownloadButton
-            href={`/Source_Skyboxes_NextJS/skyboxes/${slug}/downloads/${slug}.7z`}
+            href={`${withBase(`/skyboxes/${slug}/downloads/${slug}.7z`)}`}
             download
             size={skyboxData.fileSize}
             className="w-full md:w-auto"

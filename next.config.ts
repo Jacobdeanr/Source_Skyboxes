@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
+const repoBase = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/Source_Skyboxes_NextJS",
-  assetPrefix: "/Source_Skyboxes_NextJS",
+  basePath: repoBase,
+  assetPrefix: repoBase,
   images: {
     unoptimized: true,
   },

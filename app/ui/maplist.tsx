@@ -1,4 +1,5 @@
 type MapLink = { name: string; url: string };
+import { withBase } from '@/app/lib/basepath';
 
 export default function MapList({ maps }: { maps?: MapLink[] }) {
   if (!maps?.length)
@@ -28,7 +29,7 @@ export default function MapList({ maps }: { maps?: MapLink[] }) {
               <span className="text-sm text-neutral-100">{m.name}</span>
 
               {/* external-link arrow */}
-              <img src="/Source_Skyboxes_NextJS/icons/maximize.svg" alt="" className="invert w-4 h-4" />
+              <img src={`${withBase(`/icons/maximize.svg`)}`} alt="" className="invert w-4 h-4" />
             </a>
           </li>
         ))}
