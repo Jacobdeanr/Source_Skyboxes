@@ -1,5 +1,6 @@
 'use client';
 import { withBase } from '@/app/lib/basepath';
+import { formatDate } from '@/app/lib/date-utils';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -16,10 +17,10 @@ interface SkyboxClientProps {
 
 export default function SkyboxClient({ slug, skyboxData, previewCount }: SkyboxClientProps) {
   const [activeImage, setActiveImage] = useState(1);
-  console.log(activeImage)
   const imgBase = withBase(`/skyboxes/${slug}/images`);
   // Generate array of preview numbers based on previewCount
   const previews = Array.from({ length: previewCount }, (_, i) => i + 1);
+  const publishDate = formatDate(skyboxData.publishDate)
 
   return (
     <div className="max-w-7xl min-h-screen mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -40,7 +41,6 @@ export default function SkyboxClient({ slug, skyboxData, previewCount }: SkyboxC
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
             <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              {/*{slug.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}*/}
               {slug}
             </h1>
             <div className="mt-2 space-y-1">
@@ -62,11 +62,7 @@ export default function SkyboxClient({ slug, skyboxData, previewCount }: SkyboxC
                   </a>
                   {skyboxData.publishDate && (
                     <span className="text-neutral-500 text-xs ml-2">
-                      • Published {new Date(skyboxData.publishDate).toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'short',
-                        day: 'numeric',
-                      })}
+                      • Published {publishDate}
                     </span>
                   )}
                 </p>
@@ -91,9 +87,7 @@ export default function SkyboxClient({ slug, skyboxData, previewCount }: SkyboxC
               alt={`${slug} skybox preview ${activeImage}`}
               className="w-full h-full object-cover transition-opacity duration-300"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-6">
-              <p className="text-white text-sm">Preview angle: {activeImage}/{previews.length}</p>
-            </div>
+            
           </div>
           
           {/* Thumbnail Grid */}
