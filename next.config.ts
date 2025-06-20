@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
-const repoBase = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const repoBase = process.env.NEXT_PUBLIC_BASE_PATH;
+console.log(`Repo base: ${repoBase}`);
 
 const nextConfig: NextConfig = {
   output: "export",
