@@ -17,7 +17,7 @@ export default function SkyboxCard({ slug, meta }: SkyboxCardProps) {
   const [isHovered, setIsHovered] = useState(false);
   const imgBase = withBase(`/skyboxes/${slug}/images`);
   
-  const displayTitle = meta?.title || slug
+  const displayTitle = slug
 
   return (
     <>
