@@ -4,9 +4,8 @@
     "private": true,
     "scripts": {
       "prepare-data": "node scripts/generate-index.js",
-      "prepare-skybox-manifest": "node scripts/generate-skybox-manifest.js",
-      "dev": "npm run prepare-data && npm run prepare-skybox-manifest && next dev --turbopack",
-      "prebuild": "npm run prepare-data && npm run prepare-skybox-manifest",
+      "dev": "npm run prepare-data && npm run && next dev --turbopack",
+      "prebuild": "npm run prepare-data && npm run",
       "build": "next build",
       "start": "next start",
       "lint": "next lint"
