@@ -42,5 +42,17 @@
       65,
       56
     ]
+  },
+  "downloads": {
+    "source": {
+      "file": "sky_stormy03_hdr.7z",
+      "format": "Source engine",
+      "size": "4.5MB"
+    },
+    "exr": {
+      "file": "sky_stormy03_hdr.exr",
+      "format": "EXR",
+      "size": "18.5MB"
+    }
   }
 }
