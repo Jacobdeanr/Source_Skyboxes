@@ -21,5 +21,6 @@
   "fogParameters": {
     "primaryFogColor": [130, 119, 99],
     "secondaryFogColor": [82, 85, 90]
-  }
+  },
+  "archived": true
 }

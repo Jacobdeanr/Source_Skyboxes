@@ -4,12 +4,12 @@ import type { ComponentPropsWithoutRef } from 'react';
 
 interface DownloadButtonProps extends ComponentPropsWithoutRef<'a'> {
   label?: string;
-  format?: string;
+  format: string;
   size?: string;
 }
 
 export default function DownloadButton({
-  label = 'Download Skybox',
+  label = 'Download',
   format,
   size,
   className = '',
@@ -52,7 +52,7 @@ export default function DownloadButton({
           {(format || size) && (
             <span className="font-normal opacity-90 ml-1.5">
               ({format ?? ''}
-              {format && size ? ' • ' : ''}
+              {format && size ? ' - ' : ''}
               {size ?? ''})
             </span>
           )}

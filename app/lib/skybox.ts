@@ -29,10 +29,12 @@ export function getIndex(): SkyboxIndex {
  *
  * @returns An array of skybox slugs.
  */
-export function listSlugs(): string[] {
-  return Object.keys(getIndex());
+export function listSlugs({ includeArchived = false } = {}): string[] {
+  const all = Object.keys(getIndex());
+  return includeArchived ? all : all.filter(
+    (slug) => !getIndex()[slug].archived,
+  );
 }
-
 /**
  * Get the metadata for a specific skybox.
  *
