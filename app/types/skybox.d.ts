@@ -1,3 +1,9 @@
+export interface SkyboxDownload {
+  file: string;
+  format: string;
+  size?: string;
+}
+
 export interface SkyboxMeta {
     author: string;
     description?: string;
@@ -17,6 +23,8 @@ export interface SkyboxMeta {
       secondaryFogColor?: number[];
     };
     fileSize?: string;
+    archived?: boolean;
+    downloads?: Record<'source' | 'exr' | string, SkyboxDownload>;
 }
 
 export type SkyboxIndex = Record<string, SkyboxMeta>;

@@ -8,5 +8,6 @@
     "Cloudy"
   ],
   "timeOfDay": "Evening",
-  "weatherCondition": "Cloudy"
+  "weatherCondition": "Cloudy",
+  "archived": true
 }

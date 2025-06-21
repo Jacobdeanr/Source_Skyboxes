@@ -9,5 +9,6 @@
     "Cloudy"
   ],
   "timeOfDay": "Morning",
-  "weatherCondition": "Cloudy"
+  "weatherCondition": "Cloudy",
+  "archived": true
 }

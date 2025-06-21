@@ -8,6 +8,7 @@ import SunParams from '@/app/ui/sunparameters';
 import FogParams from '@/app/ui/fogparameters';
 import MapList from '@/app/ui/maplist';
 import DownloadButton from '@/app/ui/downloadbutton';
+import { SkyboxDownload } from '@/app/types/skybox';
 
 interface SkyboxClientProps {
   slug: string;
@@ -21,6 +22,16 @@ export default function SkyboxClient({ slug, skyboxData, previewCount }: SkyboxC
   // Generate array of preview numbers based on previewCount
   const previews = Array.from({ length: previewCount }, (_, i) => i + 1);
   const publishDate = formatDate(skyboxData.publishDate)
+
+  //Fall back until I implement all formats and file sizes
+  const downloads: Record<string, SkyboxDownload> =
+  skyboxData.downloads ?? {
+    source: {
+      file: `${slug}.7z`,
+      format: 'Source engine',
+      size: skyboxData.fileSize,
+    }
+  };
 
   return (
     <div className="max-w-7xl min-h-screen mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -69,12 +80,17 @@ export default function SkyboxClient({ slug, skyboxData, previewCount }: SkyboxC
               )}
             </div>
           </div>
-          <DownloadButton
-            href={`${withBase(`/skyboxes/${slug}/downloads/${slug}.7z`)}`}
-            download
-            size={skyboxData.fileSize}
-            className="w-full md:w-auto"
-          />
+          <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+            {Object.values(downloads).map((d) => (
+              <DownloadButton
+                key={d.file}
+                href={withBase(`/skyboxes/${slug}/downloads/${d.file}`)}
+                format={d.format}
+                size={d.size}
+                className="flex-1 sm:flex-none"
+              />
+            ))}
+          </div>
         </div>
       </div>
 
