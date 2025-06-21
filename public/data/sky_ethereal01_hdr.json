@@ -3,13 +3,6 @@
   "description": "",
   "publishDate": "2024-08-11",
   "license": "CC BY 4.0",
-  "categories": [
-    "Morning",
-    "Cloudy",
-    "Evening"
-  ],
-  "timeOfDay": "Evening",
-  "weatherCondition": "Cloudy",
   "steamMaps": [
     {
       "name": "Ethos 2",
