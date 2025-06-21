@@ -40,6 +40,23 @@
       84,
       86,
       82
+    ],
+    "secondaryFogColor": [
+      84,
+      86,
+      82
     ]
+  },
+  "downloads": {
+    "source": {
+      "file": "sky_stormy02_hdr.7z",
+      "format": "Source engine",
+      "size": "5.3MB"
+    },
+    "exr": {
+      "file": "sky_stormy02_hdr.exr",
+      "format": "EXR",
+      "size": "53.2MB"
+    }
   }
 }
