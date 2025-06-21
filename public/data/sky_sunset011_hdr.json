@@ -36,5 +36,17 @@
       89,
       99
     ]
+  },
+  "downloads": {
+    "source": {
+      "file": "sky_sunset011_hdr.7z",
+      "format": "Source engine",
+      "size": "4.3MB"
+    },
+    "exr": {
+      "file": "sky_sunset011_hdr.exr",
+      "format": "EXR",
+      "size": "18.9MB"
+    }
   }
 }
