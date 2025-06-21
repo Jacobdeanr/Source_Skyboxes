@@ -1,42 +1,58 @@
 {
   "author": "Jacob Robbins",
   "description": "",
-  "publishDate": "2024-07-02",
+  "publishDate": "2025-06-21",
   "license": "CC BY 4.0",
   "categories": [
     "Morning",
-    "Afternoon",
-    "Cloudy"
+    "Clear"
   ],
-  "timeOfDay": "Afternoon",
-  "weatherCondition": "Cloudy",
+  "timeOfDay": "Morning",
+  "weatherCondition": "Clear",
+  "sunParameters": {
+    "sunAngle": "0 116 0",
+    "pitch": "-50",
+    "brightness": [
+      255.0,
+      248.0,
+      232.0,
+      300.0
+    ],
+    "ambience": [
+      106.0,
+      141.0,
+      181.0,
+      250.0
+    ]
+  },
+  "fogParameters": {
+    "primaryFogColor": [
+      140.0,
+      155.0,
+      175.0
+    ],
+    "secondaryFogColor": [
+      123.0,
+      139.0,
+      165.0
+    ]
+  },
   "steamMaps": [
     {
       "name": "BbiCOTKA Remastered",
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3407479980"
     }
   ],
-  "sunParameters": {
-    "sunAngle": "0 116 0",
-    "pitch": "-50",
-    "brightness": [
-      255,
-      248,
-      232,
-      550
-    ],
-    "ambience": [
-      116,
-      154,
-      192,
-      300
-    ]
-  },
-  "fogParameters": {
-    "primaryFogColor": [
-      165,
-      190,
-      225
-    ]
+  "downloads": {
+    "source": {
+      "file": "sky_cloudy017_hdr.7z",
+      "format": "Source engine",
+      "size": "4.5MB"
+    },
+    "exr": {
+      "file": "sky_cloudy017_hdr.exr",
+      "format": "EXR",
+      "size": "79.5MB"
+    }
   }
 }
