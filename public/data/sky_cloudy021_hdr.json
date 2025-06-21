@@ -37,5 +37,17 @@
       155.0,
       184.0
     ]
+  },
+  "downloads": {
+    "source": {
+      "file": "sky_cloudy021_hdr.7z",
+      "format": "Source engine",
+      "size": "3.63MB"
+    },
+    "exr": {
+      "file": "sky_cloudy021_hdr.exr",
+      "format": "EXR",
+      "size": "8.7MB"
+    }
   }
 }

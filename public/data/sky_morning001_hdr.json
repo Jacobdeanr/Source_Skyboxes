@@ -37,5 +37,17 @@
       120.0,
       132.0
     ]
+  },
+  "downloads": {
+    "source": {
+      "file": "sky_morning001_hdr.7z",
+      "format": "Source engine",
+      "size": "2.7MB"
+    },
+    "exr": {
+      "file": "sky_morning001_hdr.exr",
+      "format": "EXR",
+      "size": "7.2MB"
+    }
   }
 }

@@ -37,5 +37,17 @@
       83.0,
       87.0
     ]
+  },
+  "downloads": {
+    "source": {
+      "file": "sky_overcast004_hdr.7z",
+      "format": "Source engine",
+      "size": "3.8MB"
+    },
+    "exr": {
+      "file": "sky_overcast004_hdr.exr",
+      "format": "EXR",
+      "size": "18.4MB"
+    }
   }
 }

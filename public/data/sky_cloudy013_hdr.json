@@ -9,7 +9,6 @@
   ],
   "timeOfDay": "Afternoon",
   "weatherCondition": "Overcast",
-  "steamMaps": [],
   "sunParameters": {
     "sunAngle": "0 34 0",
     "pitch": "-50",
@@ -49,5 +48,17 @@
       "name": "zs_lens",
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3212681027"
     }
-  ]
+  ],
+  "downloads": {
+    "source": {
+      "file": "sky_cloudy013_hdr.7z",
+      "format": "Source engine",
+      "size": "3.8MB"
+    },
+    "exr": {
+      "file": "sky_cloudy013_hdr.exr",
+      "format": "EXR",
+      "size": "43.1MB"
+    }
+  }
 }

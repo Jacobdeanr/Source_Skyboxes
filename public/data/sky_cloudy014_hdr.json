@@ -31,6 +31,23 @@
       127,
       162,
       202
+    ],
+    "secondaryFogColor": [
+      127,
+      162,
+      202
     ]
+  },
+  "downloads": {
+    "source": {
+      "file": "sky_cloudy014_hdr.7z",
+      "format": "Source engine",
+      "size": "6.5MB"
+    },
+    "exr": {
+      "file": "sky_cloudy014_hdr.exr",
+      "format": "EXR",
+      "size": "56.8MB"
+    }
   }
 }
