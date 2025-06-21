@@ -30,14 +30,12 @@
     "primaryFogColor": [
       30.0,
       40.0,
-      55.0,
-      255.0
+      55.0
     ],
     "secondaryFogColor": [
       30.0,
       40.0,
-      55.0,
-      255.0
+      55.0
     ]
   },
   "steamMaps": [
