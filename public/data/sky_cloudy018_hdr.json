@@ -1,36 +1,52 @@
 {
   "author": "Jacob Robbins",
   "description": "",
-  "publishDate": "2024-08-23",
+  "publishDate": "2025-06-21",
   "license": "CC BY 4.0",
   "categories": [
-    "Morning",
     "Afternoon",
     "Cloudy"
   ],
   "timeOfDay": "Afternoon",
   "weatherCondition": "Cloudy",
   "sunParameters": {
-    "sunAngle": "0 247 0",
+    "sunAngle": "0 65 0",
     "pitch": "-42",
     "brightness": [
-      248,
-      237,
-      203,
-      550
+      248.0,
+      237.0,
+      203.0,
+      450.0
     ],
     "ambience": [
-      147,
-      177,
-      215,
-      150
+      147.0,
+      177.0,
+      215.0,
+      350.0
     ]
   },
   "fogParameters": {
     "primaryFogColor": [
-      127,
-      149,
-      166
+      204.0,
+      221.0,
+      227.0
+    ],
+    "secondaryFogColor": [
+      165.0,
+      199.0,
+      231.0
     ]
+  },
+  "downloads": {
+    "source": {
+      "file": "sky_cloudy018_hdr.7z",
+      "format": "Source engine",
+      "size": "4.6MB"
+    },
+    "exr": {
+      "file": "sky_cloudy018_hdr.exr",
+      "format": "EXR",
+      "size": "10MB"
+    }
   }
 }
