@@ -42,5 +42,17 @@
       222.0,
       255.0
     ]
+  },
+  "downloads": {
+    "source": {
+      "file": "sky_sunny003_hdr.7z",
+      "format": "Source engine",
+      "size": "1.38MB"
+    },
+    "exr": {
+      "file": "sky_sunny003_hdr.exr",
+      "format": "EXR",
+      "size": "4.2MB"
+    }
   }
 }

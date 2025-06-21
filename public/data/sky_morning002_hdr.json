@@ -42,5 +42,17 @@
       "name": "Lights (Mostly) Out",
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3313845264"
     }
-  ]
+  ],
+  "downloads": {
+    "source": {
+      "file": "sky_morning002_hdr.7z",
+      "format": "Source engine",
+      "size": "5.2MB"
+    },
+    "exr": {
+      "file": "sky_morning002_hdr.exr",
+      "format": "EXR",
+      "size": "13.9MB"
+    }
+  }
 }
