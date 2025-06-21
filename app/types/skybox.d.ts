@@ -4,6 +4,23 @@ export interface SkyboxDownload {
   size?: string;
 }
 
+export interface SteamMap {
+    name: string;
+    url: string;
+}
+
+export interface SunParameters {
+    sunAngle: string;
+    pitch: string;
+    brightness: number[];
+    ambience: number[];
+}
+
+export interface FogParameters {
+    primaryFogColor?: number[];
+    secondaryFogColor?: number[];
+}
+
 export interface SkyboxMeta {
     author: string;
     description?: string;
@@ -11,17 +28,9 @@ export interface SkyboxMeta {
     license: string;
     timeOfDay?: string;
     weatherCondition?: string;
-    steamMaps?: { name: string; url: string }[];
-    sunParameters?: {
-      sunAngle: string;
-      pitch: string;
-      brightness: number[];
-      ambience: number[];
-    };
-    fogParameters?: {
-      primaryFogColor?: number[];
-      secondaryFogColor?: number[];
-    };
+    steamMaps?: SteamMap[];
+    sunParameters?: SunParameters;
+    fogParameters?: FogParameters;
     fileSize?: string;
     archived?: boolean;
     downloads?: Record<'source' | 'exr' | string, SkyboxDownload>;
