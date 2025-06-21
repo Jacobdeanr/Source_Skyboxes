@@ -30,14 +30,24 @@
     "primaryFogColor": [
       202.0,
       251.0,
-      255.0,
       255.0
     ],
     "secondaryFogColor": [
       131.0,
       174.0,
-      228.0,
-      255.0
+      228.0
     ]
+  },
+  "downloads": {
+    "source": {
+      "file": "sky_cloudy005_hdr.7z",
+      "format": "Source engine",
+      "size": "4MB"
+    },
+    "exr": {
+      "file": "sky_cloudy005_hdr.exr",
+      "format": "EXR",
+      "size": "12.9MB"
+    }
   }
 }
