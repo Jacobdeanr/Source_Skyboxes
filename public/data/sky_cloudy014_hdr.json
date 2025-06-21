@@ -4,11 +4,10 @@
   "publishDate": "2022-07-08",
   "license": "CC BY 4.0",
   "categories": [
-    "Morning",
     "Afternoon",
     "Cloudy"
   ],
-  "timeOfDay": "Morning",
+  "timeOfDay": "Afternoon",
   "weatherCondition": "Cloudy",
   "sunParameters": {
     "sunAngle": "0 264 0",
