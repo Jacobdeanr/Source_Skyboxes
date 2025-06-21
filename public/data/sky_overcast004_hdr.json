@@ -4,10 +4,10 @@
   "publishDate": "2025-06-19",
   "license": "CC BY 4.0",
   "categories": [
-    "Morning",
+    "Evening",
     "Clear"
   ],
-  "timeOfDay": "Morning",
+  "timeOfDay": "Evening",
   "weatherCondition": "Clear",
   "steamMaps": [],
   "sunParameters": {
