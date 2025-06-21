@@ -1,7 +1,7 @@
 {
   "author": "Jacob Robbins",
   "description": "",
-  "publishDate": "2025-01-06",
+  "publishDate": "2025-06-21",
   "license": "CC BY 4.0",
   "categories": [
     "Evening",
@@ -9,33 +9,50 @@
   ],
   "timeOfDay": "Evening",
   "weatherCondition": "Cloudy",
+  "sunParameters": {
+    "sunAngle": "0 6 0",
+    "pitch": "1",
+    "brightness": [
+      250.0,
+      106.0,
+      86.0,
+      30.0
+    ],
+    "ambience": [
+      75.0,
+      84.0,
+      101.0,
+      400.0
+    ]
+  },
+  "fogParameters": {
+    "primaryFogColor": [
+      88.0,
+      103.0,
+      134.0
+    ],
+    "secondaryFogColor": [
+      88.0,
+      103.0,
+      134.0
+    ]
+  },
   "steamMaps": [
     {
       "name": "Villa 118",
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3419398190"
     }
   ],
-  "sunParameters": {
-    "sunAngle": "0 117 0",
-    "pitch": "1",
-    "brightness": [
-      250,
-      106,
-      86,
-      30
-    ],
-    "ambience": [
-      75,
-      84,
-      101,
-      400
-    ]
-  },
-  "fogParameters": {
-    "primaryFogColor": [
-      88,
-      103,
-      134
-    ]
+  "downloads": {
+    "source": {
+      "file": "sky_sunset009_hdr.7z",
+      "format": "Source engine",
+      "size": "5.2MB"
+    },
+    "exr": {
+      "file": "sky_sunset009_hdr.exr",
+      "format": "EXR",
+      "size": "83.2MB"
+    }
   }
 }
