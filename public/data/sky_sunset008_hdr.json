@@ -46,5 +46,17 @@
       "name": "TDM Postbellum",
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3283190993"
     }
-  ]
+  ],
+  "downloads": {
+    "source": {
+      "file": "sky_sunset008_hdr.7z",
+      "format": "Source engine",
+      "size": "4.8MB"
+    },
+    "exr": {
+      "file": "sky_sunset008_hdr.exr",
+      "format": "EXR",
+      "size": "44.9MB"
+    }
+  }
 }
