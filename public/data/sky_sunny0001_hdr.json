@@ -8,5 +8,6 @@
     "Clear"
   ],
   "timeOfDay": "Afternoon",
-  "weatherCondition": "Clear"
+  "weatherCondition": "Clear",
+  "archived": true
 }
