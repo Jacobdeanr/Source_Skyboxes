@@ -1,7 +1,7 @@
 {
   "author": "Jacob Robbins",
   "description": "",
-  "publishDate": "2012-08-04",
+  "publishDate": "2025-06-20",
   "license": "CC BY 4.0",
   "categories": [
     "Morning",
@@ -16,26 +16,33 @@
     }
   ],
   "sunParameters": {
-    "sunAngle": "0 256 0",
+    "sunAngle": "0 122 0",
     "pitch": "-30",
     "brightness": [
-      255,
-      244,
-      221,
-      500
+      255.0,
+      243.0,
+      230.0,
+      350.0
     ],
     "ambience": [
-      121,
-      152,
-      193,
-      350
+      105.0,
+      140.0,
+      192.0,
+      300.0
     ]
   },
   "fogParameters": {
     "primaryFogColor": [
-      121,
-      152,
-      193
+      206.0,
+      245.0,
+      255.0,
+      255.0
+    ],
+    "secondaryFogColor": [
+      184.0,
+      222.0,
+      255.0,
+      255.0
     ]
-  }
+  },
 }
