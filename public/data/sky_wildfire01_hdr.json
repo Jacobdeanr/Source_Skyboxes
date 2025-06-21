@@ -36,6 +36,23 @@
       172,
       137,
       132
+    ],
+    "secondaryFogColor": [
+      172,
+      137,
+      132
     ]
+  },
+  "downloads": {
+    "source": {
+      "file": "sky_wildfire01_hdr.7z",
+      "format": "Source engine",
+      "size": "5.3MB"
+    },
+    "exr": {
+      "file": "sky_wildfire01_hdr.exr",
+      "format": "EXR",
+      "size": "5.5MB"
+    }
   }
 }
