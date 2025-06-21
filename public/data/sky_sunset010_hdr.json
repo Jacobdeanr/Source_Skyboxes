@@ -1,7 +1,7 @@
 {
   "author": "Jacob Robbins",
   "description": "",
-  "publishDate": "2025-04-02",
+  "publishDate": "2025-06-21",
   "license": "CC BY 4.0",
   "categories": [
     "Evening",
@@ -10,26 +10,43 @@
   "timeOfDay": "Evening",
   "weatherCondition": "Cloudy",
   "sunParameters": {
-    "sunAngle": "0 159 0",
-    "pitch": "-1",
+    "sunAngle": "0 11 0",
+    "pitch": "1",
     "brightness": [
-      250,
-      106,
-      86,
-      5
+      250.0,
+      106.0,
+      86.0,
+      5.0
     ],
     "ambience": [
-      53,
-      58,
-      74,
-      250
+      53.0,
+      58.0,
+      74.0,
+      250.0
     ]
   },
   "fogParameters": {
     "primaryFogColor": [
-      58,
-      64,
-      85
+      58.0,
+      64.0,
+      85.0
+    ],
+    "secondaryFogColor": [
+      58.0,
+      64.0,
+      85.0
     ]
+  },
+  "downloads": {
+    "source": {
+      "file": "sky_sunset010_hdr.7z",
+      "format": "Source engine",
+      "size": "5.9MB"
+    },
+    "exr": {
+      "file": "sky_sunset010_hdr.exr",
+      "format": "EXR",
+      "size": "46MB"
+    }
   }
 }
