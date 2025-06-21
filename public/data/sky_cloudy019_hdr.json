@@ -4,10 +4,10 @@
   "publishDate": "2025-04-09",
   "license": "CC BY 4.0",
   "categories": [
-    "Afternoon",
+    "Morning",
     "Cloudy"
   ],
-  "timeOfDay": "Afternoon",
+  "timeOfDay": "Morning",
   "weatherCondition": "Cloudy",
   "sunParameters": {
     "sunAngle": "0 108 0",
@@ -36,5 +36,17 @@
       225,
       222
     ]
+  },
+  "downloads": {
+    "source": {
+      "file": "sky_cloudy019_hdr.7z",
+      "format": "Source engine",
+      "size": "2.6MB"
+    },
+    "exr": {
+      "file": "sky_cloudy019_hdr.exr",
+      "format": "EXR",
+      "size": "19.1MB"
+    }
   }
 }
