@@ -36,6 +36,23 @@
       5,
       5,
       5
+    ],
+    "secondaryFogColor": [
+      5,
+      5,
+      5
     ]
+  },
+  "downloads": {
+    "source": {
+      "file": "sky_night010_hdr.7z",
+      "format": "Source engine",
+      "size": "4.6MB"
+    },
+    "exr": {
+      "file": "sky_night010_hdr.exr",
+      "format": "EXR",
+      "size": "53.8MB"
+    }
   }
 }
