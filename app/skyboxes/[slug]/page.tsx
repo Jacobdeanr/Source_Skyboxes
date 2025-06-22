@@ -8,9 +8,9 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata(
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ): Promise<Metadata> {
-  const { slug } = params;
+  const { slug } = await params;
   const meta     = getMeta(slug);
 
   const title = meta.description?.trim()
@@ -22,21 +22,6 @@ export async function generateMetadata(
     `Free download of ${slug}: Source Engine ready set and original 32-bit EXR.`;
 
   const previewImage = `/skyboxes/${slug}/images/previews/1.webp`; // relative to metadataBase
-
-  console.log(title,
-    description,
-    {openGraph: {
-      title,
-      description,
-      images: [{ url: previewImage, width: 1920, height: 1080 }],
-      type: 'article',
-    }},
-    {twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-      images: [previewImage],
-    }});
 
   return {
     title,
