@@ -1,14 +1,42 @@
 {
   "author": "Jacob Robbins",
   "description": "",
-  "publishDate": "2022-07-08",
+  "publishDate": "2025-06-21",
   "license": "CC BY 4.0",
   "categories": [
     "Night",
-    "Cloudy"
+    "Clear"
   ],
   "timeOfDay": "Night",
-  "weatherCondition": "Cloudy",
+  "weatherCondition": "Clear",
+  "sunParameters": {
+    "sunAngle": "0 6 0",
+    "pitch": "-2",
+    "brightness": [
+      240.0,
+      186.0,
+      153.0,
+      8.0
+    ],
+    "ambience": [
+      94.0,
+      85.0,
+      119.0,
+      90.0
+    ]
+  },
+  "fogParameters": {
+    "primaryFogColor": [
+      157.0,
+      128.0,
+      118.0
+    ],
+    "secondaryFogColor": [
+      62.0,
+      75.0,
+      103.0
+    ]
+  },
   "steamMaps": [
     {
       "name": "Anvers Station",
@@ -18,5 +46,17 @@
       "name": "gm_southbeach_n",
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2991458245"
     }
-  ]
+  ],
+  "downloads": {
+    "source": {
+      "file": "sky_night007_hdr.7z",
+      "format": "Source engine",
+      "size": "4.7MB"
+    },
+    "exr": {
+      "file": "sky_night007_hdr.exr",
+      "format": "EXR",
+      "size": "49.5MB"
+    }
+  }
 }
