@@ -13,15 +13,11 @@ export async function generateMetadata(
   const { slug } = await params;
   const meta     = getMeta(slug);
 
-  const title = meta.description?.trim()
-    ? `${meta.description} | ${slug}`
-    : `Skybox ${slug}`;
+  const title = `Skybox ${slug} by ${meta.author}`;
 
-  const description =
-//    meta.description?.trim() ??
-    `Free download of ${slug}: Source Engine ready set and original 32-bit EXR.`;
+  const description = `Free download of ${slug} Source Engine ready or original 32-bit EXR.`;
 
-  const previewImage = `/skyboxes/${slug}/images/previews/1.webp`; // relative to metadataBase
+  const previewImage = `/skyboxes/${slug}/images/previews/1.webp`;
 
   return {
     title,
