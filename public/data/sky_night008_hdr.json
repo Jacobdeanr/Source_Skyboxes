@@ -1,7 +1,7 @@
 {
   "author": "Jacob Robbins",
   "description": "",
-  "publishDate": "2022-07-08",
+  "publishDate": "2025-06-21",
   "license": "CC BY 4.0",
   "categories": [
     "Night",
@@ -9,6 +9,34 @@
   ],
   "timeOfDay": "Night",
   "weatherCondition": "Cloudy",
+  "sunParameters": {
+    "sunAngle": "0 178 0",
+    "pitch": "1",
+    "brightness": [
+      244.0,
+      230.0,
+      217.0,
+      5.0
+    ],
+    "ambience": [
+      56.0,
+      78.0,
+      103.0,
+      200.0
+    ]
+  },
+  "fogParameters": {
+    "primaryFogColor": [
+      46.0,
+      69.0,
+      93.0
+    ],
+    "secondaryFogColor": [
+      46.0,
+      69.0,
+      93.0
+    ]
+  },
   "steamMaps": [
     {
       "name": "zs_beyond (v2)",
@@ -22,5 +50,17 @@
       "name": "zs_drifting",
       "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2952441195"
     }
-  ]
+  ],
+  "downloads": {
+    "source": {
+      "file": "sky_night008_hdr.7z",
+      "format": "Source engine",
+      "size": "4.9MB"
+    },
+    "exr": {
+      "file": "sky_night008_hdr.exr",
+      "format": "EXR",
+      "size": "18.6MB"
+    }
+  }
 }
