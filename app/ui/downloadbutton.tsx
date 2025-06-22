@@ -51,9 +51,9 @@ export default function DownloadButton({
           {label}
           {(format || size) && (
             <span className="font-normal opacity-90 ml-1.5">
-              ({format ?? ''}
+              {format ?? ''}
               {format && size ? ' - ' : ''}
-              {size ?? ''})
+              ({size ?? ''})
             </span>
           )}
         </span>
