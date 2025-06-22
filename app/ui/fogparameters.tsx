@@ -6,17 +6,8 @@ type Fog = { primaryFogColor?: number[]; secondaryFogColor?: number[] };
 export default function FogParams(f: Fog) {
   const { primaryFogColor, secondaryFogColor } = f ?? {};
 
-  const noData = !primaryFogColor && !secondaryFogColor;
-
   return (
-    <ParamSection title="Fog Parameters">
-      {noData ? (
-        <ParamRow label="">
-          <span className="italic text-neutral-500">
-            No data available.
-          </span>
-        </ParamRow>
-      ) : (
+    <ParamSection title="">
         <>
           <ParamRow label="Primary Fog Color">
             {primaryFogColor && <Swatch rgb={primaryFogColor} />}
@@ -25,7 +16,6 @@ export default function FogParams(f: Fog) {
             {secondaryFogColor && <Swatch rgb={secondaryFogColor} />}
           </ParamRow>
         </>
-      )}
     </ParamSection>
   );
 }
