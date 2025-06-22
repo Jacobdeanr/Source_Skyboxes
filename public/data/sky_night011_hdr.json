@@ -31,5 +31,17 @@
       196,
       186
     ]
+  },
+  "downloads": {
+    "source": {
+      "file": "sky_night011_hdr.7z",
+      "format": "Source engine",
+      "size": "17.5MB"
+    },
+    "exr": {
+      "file": "sky_night011_hdr.exr",
+      "format": "EXR",
+      "size": "49.5MB"
+    }
   }
 }
