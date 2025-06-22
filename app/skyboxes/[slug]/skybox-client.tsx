@@ -189,11 +189,9 @@ export default function SkyboxClient({ slug, skyboxData, previewCount }: SkyboxC
       {/* Featured Maps */}
       {skyboxData.steamMaps && skyboxData.steamMaps.length > 0 && (
         <div className="mt-16">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              Featured in these maps
-            </h2>
-          </div>
+          <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-6">
+            Featured in these maps
+          </h2>
           <MapList maps={skyboxData.steamMaps} />
         </div>
       )}
