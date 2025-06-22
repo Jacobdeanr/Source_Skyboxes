@@ -1,8 +1,53 @@
 import './globals.css';
 import { Inter, JetBrains_Mono } from 'next/font/google';
+import { Metadata } from 'next';
 
 const inter     = Inter({ subsets: ['latin'], variable: '--font-sans',  display: 'swap' });
 const jetbrains = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono', display: 'swap' });
+
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://jacobdeanr.github.io/Source_Skyboxes_NextJS'),
+  title: {
+    default: 'Source Skyboxes',
+    template: '%s | Source Skyboxes',
+  },
+  description:
+    'Free HDR skyboxes for Source Engine and other renderers. Download Source Engine ready sets or original 32-bit EXR files.',
+  openGraph: {
+    siteName: 'Source Skyboxes',
+    type: 'website',
+    locale: 'en_US',
+    url: '/',
+    title: 'Source Skyboxes',
+    description:
+      'High-quality skybox textures. Free download - Source Engine ready sets and original EXR.',
+    images: [
+      { url: '/skyboxes/sky_cloudy017_hdr/images/previews/1.webp', width: 1200, height: 630 },
+    ],
+  },
+  keywords: [
+    'skybox',
+    'HDRI',
+    'Source Engine',
+    'EXR',
+    'VTF',
+    'VMT',
+    'HL2',
+    'CSGO',
+    'Source 2',
+    'TF2',
+    'S&box',
+    'Source Skyboxes',
+    'GarrysMod',
+    'gmod',
+    'hammer',
+    'cs2',
+    'free textures',
+  ],
+  authors: [{ name: 'Jacob Robbins', url: 'https://github.com/Jacobdeanr' }],
+};
+
 
 export default function RootLayout({
   children,
