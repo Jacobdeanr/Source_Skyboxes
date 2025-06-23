@@ -13,5 +13,17 @@
   },
   "fogParameters": {
     "primaryFogColor": [20, 29, 47]
+  },
+  "downloads": {
+    "source": {
+      "file": "sky_night003_hdr.7z",
+      "format": "Source engine",
+      "size": "7.5MB"
+    },
+    "exr": {
+      "file": "sky_night003_hdr.exr",
+      "format": "EXR",
+      "size": "49.9MB"
+    }
   }
 }
