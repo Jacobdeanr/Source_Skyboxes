@@ -13,9 +13,9 @@ export async function generateMetadata(
   const { slug } = await params;
   const meta     = getMeta(slug);
 
-  const title = `Skybox ${slug} by ${meta.author}`;
+  const title = `Download ${slug} by ${meta.author}`;
 
-  const description = `Free download of ${slug} Source Engine ready or original 32-bit EXR.`;
+  const description = `Free download of ${slug} in Source Engine ready format or original 32-bit EXR.`;
 
   const previewImage = `/skyboxes/${slug}/images/previews/1.webp`;
 
