@@ -4,7 +4,7 @@ import SkyboxClient from './skybox-client';
 import { Metadata } from 'next';
 
 export async function generateStaticParams() {
-  return listSlugs().map((slug) => ({ slug }));
+  return listSlugs({ includeArchived: true }).map((slug) => ({ slug }));
 }
 
 export async function generateMetadata(
