@@ -16,3 +16,4 @@ files.forEach((fname) => {
 
 const out = path.join(dataDir, 'index.json');
 fs.writeFileSync(out, JSON.stringify(all, null, 2));
+console.log(`index.json with ${files.length} skyboxes`);
