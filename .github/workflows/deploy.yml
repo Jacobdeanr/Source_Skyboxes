@@ -80,7 +80,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
       - name: Generate sitemap.xml
-        run: npx ts-node scripts/generate-sitemap.ts
+        run: node scripts/generate-sitemap.js
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
