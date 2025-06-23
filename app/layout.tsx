@@ -2,12 +2,14 @@ import './globals.css';
 import { Inter, JetBrains_Mono } from 'next/font/google';
 import { Metadata } from 'next';
 
+import { SITE_URL, withBase } from '@/app/lib/basepath';
+
 const inter     = Inter({ subsets: ['latin'], variable: '--font-sans',  display: 'swap' });
 const jetbrains = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono', display: 'swap' });
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://jacobdeanr.github.io/Source_Skyboxes_NextJS'),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: 'Source Skyboxes',
     template: '%s | Source Skyboxes',
@@ -21,29 +23,15 @@ export const metadata: Metadata = {
     url: '/',
     title: 'Source Skyboxes',
     description:
-      'High-quality skybox textures. Free download - Source Engine ready sets and original EXR.',
+      'High-quality skybox textures. Free download – Source Engine ready sets and original EXR.',
     images: [
-      { url: '/skyboxes/sky_cloudy017_hdr/images/previews/1.webp', width: 1200, height: 630 },
+      { url: withBase('/skyboxes/sky_cloudy017_hdr/images/previews/1.webp'), width: 1200, height: 630 },
     ],
   },
   keywords: [
-    'skybox',
-    'HDRI',
-    'Source Engine',
-    'EXR',
-    'VTF',
-    'VMT',
-    'HL2',
-    'CSGO',
-    'Source 2',
-    'TF2',
-    'S&box',
-    'Source Skyboxes',
-    'GarrysMod',
-    'gmod',
-    'hammer',
-    'cs2',
-    'free textures',
+    'skybox', 'HDRI', 'Source Engine', 'EXR', 'VTF', 'VMT',
+    'HL2', 'CSGO', 'Source 2', 'TF2', 'S&box', 'Source Skyboxes',
+    'GarrysMod', 'gmod', 'hammer', 'cs2', 'free textures',
   ],
   authors: [{ name: 'Jacob Robbins', url: 'https://github.com/Jacobdeanr' }],
 };

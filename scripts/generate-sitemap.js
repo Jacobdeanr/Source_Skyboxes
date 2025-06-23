@@ -9,7 +9,7 @@ const index     = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
 
 const pages = [
   '',
-  '/archive',
+  //'/archive',
   ...Object.keys(index).map((s) => `/skyboxes/${s}/`)
 ];
 
