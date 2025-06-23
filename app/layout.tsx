@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description:
       'High-quality skybox textures. Free download - Source Engine ready sets and original EXR.',
     images: [
-      { url: withBase('/skyboxes/sky_cloudy017_hdr/images/previews/1.webp'), width: 1200, height: 630 },
+      { url: '/skyboxes/sky_cloudy017_hdr/images/previews/1.webp', width: 1200, height: 630 },
     ],
   },
   keywords: [
