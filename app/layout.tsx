@@ -11,19 +11,19 @@ const jetbrains = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono', 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Source Skyboxes',
+    default: `Jacob Robbins' Free Source Engine Skyboxes`,
     template: '%s | Source Skyboxes',
   },
   description:
     'Free HDR skyboxes for Source Engine and other renderers. Download Source Engine ready sets or original 32-bit EXR files.',
   openGraph: {
-    siteName: 'Source Skyboxes',
+    siteName: `Jacob Robbins' Free Source Engine Skyboxes`,
     type: 'website',
     locale: 'en_US',
     url: '/',
-    title: 'Source Skyboxes',
+    title: `Jacob Robbins' Free Source Engine Skyboxes`,
     description:
-      'High-quality skybox textures. Free download – Source Engine ready sets and original EXR.',
+      'High-quality skybox textures. Free download - Source Engine ready sets and original EXR.',
     images: [
       { url: withBase('/skyboxes/sky_cloudy017_hdr/images/previews/1.webp'), width: 1200, height: 630 },
     ],
