@@ -1,0 +1,52 @@
+{
+  "author": "Jacob Robbins",
+  "description": "",
+  "publishDate": "2025-06-23",
+  "license": "CC BY 4.0",
+  "categories": [
+    "Afternoon",
+    "Overcast"
+  ],
+  "timeOfDay": "Afternoon",
+  "weatherCondition": "Overcast",
+  "sunParameters": {
+    "sunAngle": "0 21 0",
+    "pitch": "-25",
+    "brightness": [
+      237.0,
+      237.0,
+      233.0,
+      8.0
+    ],
+    "ambience": [
+      160.0,
+      158.0,
+      160.0,
+      45.0
+    ]
+  },
+  "fogParameters": {
+    "primaryFogColor": [
+      49.0,
+      50.0,
+      56.0
+    ],
+    "secondaryFogColor": [
+      52.0,
+      53.0,
+      61.0
+    ]
+  },
+  "downloads": {
+    "source": {
+      "file": "sky_stormy04_hdr.7z",
+      "format": "Source engine",
+      "size": "6.6MB"
+    },
+    "exr": {
+      "file": "sky_stormy04_hdr.exr",
+      "format": "EXR",
+      "size": "5.5MB"
+    }
+  }
+}
