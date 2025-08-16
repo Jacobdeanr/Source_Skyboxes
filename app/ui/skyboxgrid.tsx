@@ -4,11 +4,14 @@ import type { SkyboxMeta } from '../types/skybox';
 import { SortOption } from './sort-types';
 import SkyboxCard from './skyboxcard';
 
-const TIME_OF_DAY_ORDER = ['Morning', 'Afternoon', 'Evening', 'Night', 'Other'];
-const WEATHER_CONDITIONS_ORDER = ['Clear', 'Cloudy', 'Hazy', 'Overcast', 'Other'];
+const TIME_OF_DAY_ORDER = ['Morning', 'Afternoon', 'Evening', 'Night', 'Other', 'Archived'];
+const WEATHER_CONDITIONS_ORDER = ['Clear', 'Cloudy', 'Hazy', 'Overcast', 'Other', 'Archived'];
 
 // Helper functions
-function getSkyboxCategory(slug: string, meta: Record<string, SkyboxMeta>, category: 'timeOfDay' | 'weatherCondition'): string {
+function getSkyboxCategory(slug: string, meta: Record<string, SkyboxMeta>, category: 'timeOfDay' | 'weatherCondition' ): string {
+  if (meta[slug].archived) {
+    return 'Archived';
+  }
   return meta[slug]?.[category] || 'Other';
 }
 
@@ -39,7 +42,7 @@ function sortSkyboxesByPitch(slugs: string[], meta: Record<string, SkyboxMeta>):
 function groupSkyboxes(
   slugs: string[], 
   meta: Record<string, SkyboxMeta>,
-  category: 'timeOfDay' | 'weatherCondition'
+  category: 'timeOfDay' | 'weatherCondition' 
 ): Record<string, string[]> {
   const groups: Record<string, string[]> = {};
   
@@ -48,7 +51,9 @@ function groupSkyboxes(
     if (!groups[categoryValue]) {
       groups[categoryValue] = [];
     }
+    
     groups[categoryValue].push(slug);
+    console.log('categoryValue', categoryValue, slug);
   });
 
   return groups;
@@ -61,12 +66,14 @@ function groupAndSortSkyboxes(
 ): { title: string; slugs: string[] }[] {
   const groups = groupSkyboxes(slugs, meta, category);
   const order = category === 'timeOfDay' ? TIME_OF_DAY_ORDER : WEATHER_CONDITIONS_ORDER;
-  return order
-    .filter(cat => groups[cat])
-    .map(cat => ({
-      title: cat,
-      slugs: sortSkyboxesByPitch(groups[cat], meta)
-    }));
+  
+  console.log('order', order.filter(cat => groups[cat]));
+
+
+  return order.filter(cat => groups[cat]).map(cat => ({
+    title: cat,
+    slugs: sortSkyboxesByPitch(groups[cat], meta)
+  }));
 }
 
 interface SkyboxGridProps {
@@ -105,7 +112,7 @@ export default function SkyboxGrid({ slugs, meta, sort = 'time-of-day', query }:
                 </span>
               </h2>
               <p className="mt-2 text-sm text-neutral-400 pl-6 max-w-2xl">
-                Browse the collection of {title.toLowerCase()} skyboxes for your next project.
+                {title === 'Archived' ? 'The original source files for these skies were lost to time, thus are unable to be remastered. However, the source engine files are still available for download.' : `Browse the collection of ${title.toLowerCase()} skyboxes for your next project.`}
               </p>
             </div>
             
@@ -114,18 +121,6 @@ export default function SkyboxGrid({ slugs, meta, sort = 'time-of-day', query }:
                 <SkyboxCard key={slug} slug={slug} meta={meta[slug] || {}} />
               ))}
             </div>
-            {/*
-            {slugs.length > 4 && (
-              <div className="text-center pt-4">
-                <button className="inline-flex items-center text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
-                  View all {slugs.length} {title.toLowerCase()} skies
-                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
-              </div>
-            )}
-            */}
           </section>
         ))}
       </div>

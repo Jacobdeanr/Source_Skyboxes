@@ -126,19 +126,19 @@ export default function Modal({ slug, meta, onClose }: { slug: string; meta: Sky
                   <h3 className="font-medium text-neutral-200">Environment Parameters</h3>
                   <div className="grid gap-6 lg:grid-cols-2 lg:gap-x-8 items-start">
                     {/* Fog Parameters */}
-                              {meta?.fogParameters && (
-                                <div className="bg-neutral-900/50 backdrop-blur-sm rounded-xl p-6 border border-neutral-800">
-                                  <h2 className="text-xl font-semibold text-white mb-4">Fog Parameters</h2>
-                                  <FogParams {...meta.fogParameters} />
-                                </div>
-                              )}
-                              {/* Sun Parameters */}
-                              {meta?.sunParameters && (
-                                <div className="bg-neutral-900/50 backdrop-blur-sm rounded-xl p-6 border border-neutral-800">
-                                  <h2 className="text-xl font-semibold text-white mb-4">Sun Parameters</h2>
-                                  <SunParams {...meta.sunParameters} />
-                                </div>
-                              )}
+                    {meta?.fogParameters && (
+                      <div className="bg-neutral-900/50 backdrop-blur-sm rounded-xl p-6 border border-neutral-800">
+                        <h2 className="text-xl font-semibold text-white mb-4">Fog Parameters</h2>
+                        <FogParams {...meta.fogParameters} />
+                      </div>
+                    )}
+                    {/* Sun Parameters */}
+                    {meta?.sunParameters && (
+                      <div className="bg-neutral-900/50 backdrop-blur-sm rounded-xl p-6 border border-neutral-800">
+                        <h2 className="text-xl font-semibold text-white mb-4">Sun Parameters</h2>
+                        <SunParams {...meta.sunParameters} />
+                      </div>
+                    )}
                   </div>
                 </div>
               )}
