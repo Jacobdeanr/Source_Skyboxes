@@ -70,26 +70,6 @@ export default function SkyboxCard({ slug, meta }: { slug: string; meta: SkyboxM
               <h2 className="text-sm font-semibold text-white line-clamp-2">
                 {displayTitle}
               </h2>
-              {/*
-              <div className="flex items-center space-x-3 text-xs text-neutral-300">
-                {meta?.sunParameters?.pitch !== undefined && (
-                  <span className="inline-flex items-center" title="Pitch">
-                    <svg className="w-3 h-3 mr-1 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                    </svg>
-                    {meta.sunParameters.pitch}°
-                  </span>
-                )}
-                {meta?.sunParameters?.sunAngle !== undefined && (
-                  <span className="inline-flex items-center" title="Sun Angle">
-                    <svg className="w-3 h-3 mr-1 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                    </svg>
-                    {meta.sunParameters.sunAngle}°
-                  </span>
-                )}
-              </div>
-              */}
             </div>
             
             {/* Always visible title on mobile */}

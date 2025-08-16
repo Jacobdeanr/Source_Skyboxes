@@ -83,7 +83,9 @@ export default function SkyboxClient({ slug, skyboxData, previewCount }: SkyboxC
           <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
 
             {/* Source engine download
-                     
+            
+            https://github.com/Jacobdeanr/Source_Skyboxes_NextJS/releases/download/assets/sky_cloudy005.tgd 
+            
 
             */}
             {Object.values(downloads).map((d) => (
