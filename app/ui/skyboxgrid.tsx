@@ -53,7 +53,6 @@ function groupSkyboxes(
     }
     
     groups[categoryValue].push(slug);
-    console.log('categoryValue', categoryValue, slug);
   });
 
   return groups;
@@ -67,9 +66,6 @@ function groupAndSortSkyboxes(
   const groups = groupSkyboxes(slugs, meta, category);
   const order = category === 'timeOfDay' ? TIME_OF_DAY_ORDER : WEATHER_CONDITIONS_ORDER;
   
-  console.log('order', order.filter(cat => groups[cat]));
-
-
   return order.filter(cat => groups[cat]).map(cat => ({
     title: cat,
     slugs: sortSkyboxesByPitch(groups[cat], meta)
