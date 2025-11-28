@@ -37,6 +37,12 @@
       160
     ]
   },
+  "steamMaps": [
+    {
+      "name": "de_pocca_doxy",
+      "url": "https://gamebanana.com/mods/595174"
+    },
+  ],
   "downloads": {
     "source": {
       "file": "sky_cloudy016_hdr.7z",
