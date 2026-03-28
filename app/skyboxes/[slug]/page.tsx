@@ -1,6 +1,7 @@
 import { use } from 'react';
-import { getMeta, getPreviewCount, listSlugs } from '../../lib/skybox';
-import SkyboxClient from './skybox-client';
+import { Suspense } from 'react';
+import { getMeta, getPreviewCount, getIndex, listSlugs } from '../../lib/skybox';
+import SkyboxDetailClient from '../../ui/skybox-detail-client';
 import { Metadata } from 'next';
 
 export async function generateStaticParams() {
@@ -43,15 +44,21 @@ export default function Page({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const { slug }     = use(params);
-  const skyboxData   = getMeta(slug);
+  const { slug } = use(params);
+  const skyboxData = getMeta(slug);
   const previewCount = getPreviewCount(slug);
+  const allSlugs = listSlugs({ includeArchived: true });
+  const index = getIndex();
 
   return (
-    <SkyboxClient
-      slug={slug}
-      skyboxData={skyboxData}
-      previewCount={previewCount}
-    />
+    <Suspense fallback={null}>
+      <SkyboxDetailClient
+        slug={slug}
+        meta={skyboxData}
+        previewCount={previewCount}
+        allSlugs={allSlugs}
+        index={index}
+      />
+    </Suspense>
   );
 }

@@ -13,15 +13,16 @@ export default function IconLink({ href, label, svg, menuMode = false }: IconLin
     <a
       href={href}
       aria-label={label}
+      title={label}
       target="_blank"
       rel="noreferrer"
       // Apply different styles based on menuMode
       className={`
         ${menuMode 
-          ? 'flex items-center gap-3 w-full px-3 py-2 text-sm text-neutral-200 hover:bg-neutral-800' 
-          : 'inline-flex items-center justify-center w-10 h-10 p-2 rounded-lg bg-neutral-800/50 hover:bg-neutral-800/70 border border-neutral-700/50 transition-colors'
+          ? 'flex min-h-11 items-center gap-3 w-full px-3 py-2 text-sm text-[color:var(--foreground-soft)] hover:bg-[color:var(--background-panel)]' 
+          : 'inline-flex h-12 w-12 items-center justify-center border border-[color:var(--border-soft)] bg-transparent p-2 transition-colors hover:border-[color:var(--border-strong)]'
         }
-        focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent
+        focus:outline-none focus-visible:ring-2 focus-visible:ring-[color:var(--foreground-bright)] focus-visible:ring-offset-2 focus-visible:ring-offset-[color:var(--background)]
       `}
     >
       <div className="relative w-full h-full flex items-center justify-center">

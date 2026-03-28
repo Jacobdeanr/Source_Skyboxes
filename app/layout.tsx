@@ -1,10 +1,11 @@
 import './globals.css';
-import { Inter, JetBrains_Mono } from 'next/font/google';
+import { Inter, JetBrains_Mono, Space_Grotesk } from 'next/font/google';
 import { Metadata } from 'next';
 
 import { SITE_URL, withBase } from '@/app/lib/basepath';
 
-const inter     = Inter({ subsets: ['latin'], variable: '--font-sans',  display: 'swap' });
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swap' });
+const display = Space_Grotesk({ subsets: ['latin'], variable: '--font-display', display: 'swap' });
 const jetbrains = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono', display: 'swap' });
 
 
@@ -43,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrains.variable}`}>
+    <html lang="en" className={`${inter.variable} ${display.variable} ${jetbrains.variable}`}>
       <body>
         {children}
       </body>

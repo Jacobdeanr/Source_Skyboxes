@@ -1,19 +1,85 @@
 @import "tailwindcss";
 
 :root {
-  --background:#ffffff;
-  --foreground:#171717;
+  --background: #090d12;
+  --background-hero: #0d131a;
+  --background-elevated: #10161d;
+  --background-panel: #141b23;
+  --background-panel-strong: #18212b;
+  --background-card-top: #0f151c;
+  --foreground: #eee7df;
+  --foreground-bright: #f4eaeb;
+  --foreground-muted: #9e9b95;
+  --foreground-soft: #cbc2b8;
+  --foreground-rail: #a3a3a3;
+  --border-soft: rgba(244, 234, 227, 0.08);
+  --border-strong: rgba(244, 234, 227, 0.15);
+  --accent: #7fb4ff;
+  --accent-strong: #f0a35b;
+  --shadow-panel: 0 24px 60px rgba(0, 0, 0, 0.35);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root { --background:#0a0a0a; --foreground:#ededed; }
+  :root {
+    --background: #090d12;
+    --foreground: #eee7df;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #090d12;
+  color-scheme: dark;
 }
 
 body{
-  background:var(--background);
+  margin: 0;
+  min-height: 100vh;
+  background: var(--background);
   color:var(--foreground);
   font-family:var(--font-sans);
+  text-rendering: optimizeLegibility;
 }
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: rgba(127, 180, 255, 0.28);
+  color: #f8fbff;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
 .font-mono {
   font-family: var(--font-mono);
+}
+
+.app-shell {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.055'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 180px 180px;
+}
+
+@keyframes landing-image-in {
+  from {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.landing-image {
+  animation: landing-image-in 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }

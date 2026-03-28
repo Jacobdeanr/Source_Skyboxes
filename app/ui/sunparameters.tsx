@@ -1,5 +1,5 @@
 import { Swatch } from "./swatch";
-import { ParamSection, ParamRow } from './parametersections';
+import { CopyableValue, ParamSection, ParamRow } from './parametersections';
 
 export type Sun = {
     sunAngle?: string;
@@ -14,8 +14,8 @@ export type Sun = {
     return (
       <ParamSection title="">
         <>
-            <ParamRow label="Sun Angle">{sunAngle}</ParamRow>
-            <ParamRow label="Pitch">{pitch}</ParamRow>
+            <ParamRow label="Sun Angle">{sunAngle && <CopyableValue value={sunAngle} />}</ParamRow>
+            <ParamRow label="Pitch">{pitch !== undefined && <CopyableValue value={pitch} />}</ParamRow>
             <ParamRow label="Brightness">
               {brightness && <Swatch rgb={brightness} />}
             </ParamRow>

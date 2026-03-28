@@ -1,38 +1,40 @@
 'use client';
 
-import Image from 'next/image';
-import Modal from './modal';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import Image from 'next/image';
+
 import { withBase } from '@/app/lib/basepath';
 
+import { getHumanTitle } from '../lib/catalog';
 import type { SkyboxMeta } from '../types/skybox';
-
-//Slug is the name of the sky (i.e. sky_sunny001)
-//Meta is the metadata for the sky (i.e. author, description, publishDate, license, timeOfDay, weatherCondition, steamMaps, sunParameters, etc)
-export default function SkyboxCard({ slug, meta }: { slug: string; meta: SkyboxMeta }) {
-  const [open, setOpen] = useState(false);
+export default function SkyboxCard({ slug, meta, stateQuery }: { slug: string; meta: SkyboxMeta; stateQuery: string }) {
+  const pathname = usePathname();
   const [isHovered, setIsHovered] = useState(false);
   const imgBase = withBase(`/skyboxes/${slug}/images`);
-  const displayTitle = slug
+  const displayTitle = getHumanTitle(slug, meta);
+  const technicalName = slug.replaceAll('_', ' ');
+  const publishYear = meta.publishDate ? new Date(meta.publishDate).getUTCFullYear() : undefined;
+  const from = `${pathname}${stateQuery ? `?${stateQuery}` : ''}#${slug}`;
 
   return (
-    <>
-      <button
-        onClick={() => setOpen(true)}
+    <Link
+        href={`/skyboxes/${slug}?from=${encodeURIComponent(from)}`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onFocus={() => setIsHovered(true)}
         onBlur={() => setIsHovered(false)}
-        className="group relative block w-full h-full overflow-hidden rounded-xl transition-all duration-300 hover:shadow-2xl hover:shadow-black/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-900"
+        id={slug}
+        className="group relative block w-full text-left transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#090d12]"
         aria-label={`View ${displayTitle} skybox`}
       >
-        <div className="relative aspect-[4/3] w-full overflow-hidden">
-          {/* Background image with smooth zoom effect */}
-          <div 
+        <div className="relative aspect-[4/3] w-full overflow-hidden border border-[color:var(--border-soft)]">
+          <div
             className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out"
             style={{
               backgroundImage: `url(${imgBase}/thumbnail.webp)`,
-              transform: isHovered ? 'scale(1.1)' : 'scale(1.0)',
+              transform: isHovered ? 'scale(1.02)' : 'scale(1)',
             }}
           >
             <Image
@@ -40,54 +42,35 @@ export default function SkyboxCard({ slug, meta }: { slug: string; meta: SkyboxM
               alt=""
               fill
               className="opacity-0"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
               unoptimized
               aria-hidden="true"
             />
           </div>
-          
-          {/* Gradient overlay - bottom only */}
-          <div className={[
-            'absolute bottom-0 left-0 right-0 h-1/2 z-0',
-            'transition-opacity duration-300',
-            'bg-gradient-to-t from-black/80 to-transparent',
-            'opacity-100', // Always visible on mobile
-            'sm:opacity-0 sm:group-hover:opacity-100' // Hidden on desktop, show on hover
-          ].join(' ')} />
-          
-          {/* Content overlay */}
-          <div className="absolute inset-0 flex flex-col justify-end p-4 z-10">
-            <div className={[
-              'transform transition-all duration-300',
-              'sm:translate-y-2 sm:opacity-0',
-              'sm:group-hover:translate-y-0 sm:group-hover:opacity-100',
-              'space-y-1',
-              // Always show on mobile, only animate on desktop
-              isHovered ? 'translate-y-0' : 'translate-y-2',
-              isHovered ? 'opacity-100' : 'opacity-0',
-              'sm:opacity-0 sm:group-hover:opacity-100'
-            ].join(' ')}>
-              <h2 className="text-sm font-semibold text-white line-clamp-2">
-                {displayTitle}
-              </h2>
-            </div>
-            
-            {/* Always visible title on mobile */}
-            <h2 className="text-sm font-semibold text-white sm:hidden mt-1">
+
+          <div className="absolute inset-0 bg-black/30" />
+
+          <div
+            className={`absolute inset-x-0 bottom-0 border-t border-white/10 bg-black/50 px-4 py-2 text-[11px] uppercase tracking-[0.18em] text-white/72 transition-all duration-200 ${
+              isHovered ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            ID: {technicalName}
+          </div>
+        </div>
+
+        <div className="space-y-3 px-0 py-4">
+          <div className="space-y-2 pt-1">
+            <h2 className="font-display text-xl font-semibold tracking-[-0.03em] text-[color:var(--foreground-bright)]">
               {displayTitle}
             </h2>
+            {meta.archived && publishYear && !Number.isNaN(publishYear) && (
+              <p className="text-sm text-[color:var(--foreground-muted)]">
+                {publishYear}
+              </p>
+            )}
           </div>
-          
-          {/* Hover indicator */}
-          <div className={[
-            'absolute inset-0 border-2 border-transparent rounded-xl',
-            'transition-all duration-300',
-            isHovered ? 'border-white/20' : ''
-          ].join(' ')} />
         </div>
-      </button>
-
-      {open && <Modal slug={slug} meta={meta} onClose={() => setOpen(false)} />}
-    </>
+    </Link>
   );
 }

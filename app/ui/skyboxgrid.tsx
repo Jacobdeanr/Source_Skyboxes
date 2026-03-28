@@ -1,124 +1,149 @@
+import { ReactElement, useMemo } from 'react';
 
-import { useMemo, ReactElement } from 'react';
+import { QuickFilter, getVisibleSlugs, groupAndSortSkyboxes, sortSkyboxesByPopularity } from '../lib/catalog';
 import type { SkyboxMeta } from '../types/skybox';
-import { SortOption } from './sort-types';
 import SkyboxCard from './skyboxcard';
+import { SortOption } from './sort-types';
 
-const TIME_OF_DAY_ORDER = ['Morning', 'Afternoon', 'Evening', 'Night', 'Other', 'Archived'];
-const WEATHER_CONDITIONS_ORDER = ['Clear', 'Cloudy', 'Hazy', 'Overcast', 'Other', 'Archived'];
-
-// Helper functions
-function getSkyboxCategory(slug: string, meta: Record<string, SkyboxMeta>, category: 'timeOfDay' | 'weatherCondition' ): string {
-  if (meta[slug].archived) {
-    return 'Archived';
-  }
-  return meta[slug]?.[category] || 'Other';
-}
-
-function filterByQuery(slugs: string[], query: string): string[] {
-  if (!query) return slugs;
-  const q = query.toLowerCase();
-  return slugs.filter(slug => slug.toLowerCase().includes(q));
-}
-
-function sortSkyboxesByPitch(slugs: string[], meta: Record<string, SkyboxMeta>): string[] {
-  const sortedSlugs = [...slugs];
-  return sortedSlugs.sort((slugA, slugB) => {
-    const pitchA = meta[slugA]?.sunParameters?.pitch;
-    const pitchValueA = pitchA !== undefined 
-      ? (typeof pitchA === 'string' ? parseFloat(pitchA) : pitchA)
-      : 0;
-    const pitchB = meta[slugB]?.sunParameters?.pitch;
-    const pitchValueB = pitchB !== undefined 
-      ? (typeof pitchB === 'string' ? parseFloat(pitchB) : pitchB)
-      : 0;
-    const absPitchA = Math.abs(pitchValueA);
-    const absPitchB = Math.abs(pitchValueB);
-    return absPitchB - absPitchA;
-  });
-}
-
-// Helper function to group skyboxes by category
-function groupSkyboxes(
-  slugs: string[], 
-  meta: Record<string, SkyboxMeta>,
-  category: 'timeOfDay' | 'weatherCondition' 
-): Record<string, string[]> {
-  const groups: Record<string, string[]> = {};
-  
-  slugs.forEach(slug => {
-    const categoryValue = getSkyboxCategory(slug, meta, category);
-    if (!groups[categoryValue]) {
-      groups[categoryValue] = [];
-    }
-    
-    groups[categoryValue].push(slug);
-  });
-
-  return groups;
-}
-
-function groupAndSortSkyboxes(
-  slugs: string[], 
-  meta: Record<string, SkyboxMeta>,
-  category: 'timeOfDay' | 'weatherCondition'
-): { title: string; slugs: string[] }[] {
-  const groups = groupSkyboxes(slugs, meta, category);
-  const order = category === 'timeOfDay' ? TIME_OF_DAY_ORDER : WEATHER_CONDITIONS_ORDER;
-  
-  return order.filter(cat => groups[cat]).map(cat => ({
-    title: cat,
-    slugs: sortSkyboxesByPitch(groups[cat], meta)
-  }));
-}
+const descriptions: Record<string, string> = {
+  Morning: 'Soft early-day skies with gentle contrast, open color, and a little more room to breathe.',
+  Afternoon: 'Clear working light for grounded scenes, readable horizons, and easy daytime coverage.',
+  Evening: 'Late-day skies with warmer edges, longer shadows, and more cinematic atmosphere.',
+  Night: 'Moonlit and low-light skies for quieter silhouettes, darker scenes, and dramatic contrast.',
+  Clear: 'Open, readable skies that keep the light crisp and the horizon easy to place.',
+  Cloudy: 'Layered cloud cover for softer light, steadier mood, and more grounded daytime scenes.',
+  Hazy: 'Muted skies with lighter depth cues, atmospheric falloff, and a softer edge to the day.',
+  Overcast: 'Diffuse, brooding cloud sets for restrained lighting and heavier weather moods.',
+  Other: 'Distinct outliers, specialty skies, and experiments that sit just outside the main families.',
+  Archived: 'Older entries kept available for reference and download when the collection shifts forward.',
+};
 
 interface SkyboxGridProps {
   slugs: string[];
   meta: Record<string, SkyboxMeta>;
   sort?: SortOption;
   query: string;
+  quickFilter: QuickFilter;
+  stateQuery: string;
 }
 
-export default function SkyboxGrid({ slugs, meta, sort = 'time-of-day', query }: SkyboxGridProps): ReactElement {
-  const visible = useMemo(() => filterByQuery(slugs, query), [slugs, query]);
+export default function SkyboxGrid({
+  slugs,
+  meta,
+  sort = 'time-of-day',
+  query,
+  quickFilter,
+  stateQuery,
+}: SkyboxGridProps): ReactElement {
+  const visible = useMemo(() => {
+    return getVisibleSlugs(slugs, meta, query, quickFilter);
+  }, [meta, query, quickFilter, slugs]);
 
-  // Group skyboxes by time of day or weather conditions
+  const flatSkyboxes = useMemo(() => {
+    return sort === 'most-downloaded' ? sortSkyboxesByPopularity(visible, meta) : visible;
+  }, [meta, sort, visible]);
+
   const groupedSkyboxes = useMemo(() => {
+    if (sort === 'most-downloaded' || quickFilter === 'favorites') {
+      return [];
+    }
+
     return groupAndSortSkyboxes(
       visible,
       meta,
-      sort === 'time-of-day' ? 'timeOfDay' : 'weatherCondition'
+      sort === 'time-of-day' ? 'timeOfDay' : 'weatherCondition',
     );
-  }, [visible, meta, sort]);
+  }, [meta, sort, visible]);
+
+  const flatMode = sort === 'most-downloaded' || quickFilter === 'favorites';
+  const flatHeader = sort === 'most-downloaded'
+    ? {
+        title: 'Most popular',
+        description: 'A quick run of the skies showing up most often in community map references.',
+      }
+    : {
+        title: 'Community favorites',
+        description: 'A tighter pass across the skies showing up most often in community use.',
+      };
 
   return (
-    <div className="min-h-screen">
-      <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
-        {groupedSkyboxes.map(({ title, slugs }: { title: string; slugs: string[] }) => (
-          <section key={title} className="space-y-8">
-            <div className="relative">
-              <div className="absolute -left-4 top-1/2 -translate-y-1/2 w-1 h-8 bg-gradient-to-b from-blue-400 to-purple-500 rounded-full" />
-              <h2 className="flex items-center pl-6">
-                <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent text-2xl md:text-3xl font-bold">
-                  {title} Skies
-                </span>
-                <span className="ml-4 text-sm md:text-base font-normal text-neutral-400 bg-neutral-800/50 px-3 py-1.5 rounded-full inline-flex items-center h-fit">
-                  <span className="w-1.5 h-1.5 rounded-full bg-blue-400 mr-2" />
-                  {slugs.length} {slugs.length === 1 ? 'Skybox' : 'Skyboxes'}
-                </span>
-              </h2>
-              <p className="mt-2 text-sm text-neutral-400 pl-6 max-w-2xl">
-                {title === 'Archived' ? 'The original source files for these skies were lost to time, thus are unable to be remastered. However, the source engine files are still available for download.' : `Browse the collection of ${title.toLowerCase()} skyboxes for your next project.`}
+    <div className="pb-20 pt-8">
+      <div className="mx-auto max-w-[1680px] px-5 sm:px-6 lg:px-10">
+        {flatMode ? (
+          flatSkyboxes.length === 0 ? (
+            <section className="border-t border-[color:var(--border-soft)] px-0 py-16 text-center">
+              <p className="text-[11px] uppercase tracking-[0.24em] text-[color:var(--foreground-muted)]">No results</p>
+              <h3 className="mt-3 font-display text-3xl font-semibold tracking-[-0.04em] text-white">
+                Nothing surfaced from that combination.
+              </h3>
+              <p className="mx-auto mt-4 max-w-xl text-sm leading-6 text-[color:var(--foreground-muted)]">
+                Try a broader mood, a different time of day, or a lighter filter to open the collection back up.
               </p>
-            </div>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
-              {slugs.map((slug: string) => (
-                <SkyboxCard key={slug} slug={slug} meta={meta[slug] || {}} />
-              ))}
-            </div>
+            </section>
+          ) : (
+            <section className="space-y-7">
+              <div className="border-b border-[color:var(--border-soft)] pb-5">
+                <div className="max-w-2xl">
+                  <div className="flex flex-wrap items-baseline gap-x-3 gap-y-2">
+                    <h3 className="font-display text-3xl font-semibold tracking-[-0.04em] text-[color:var(--foreground-bright)] sm:text-[2rem]">
+                      {flatHeader.title}
+                    </h3>
+                    <p className="text-sm text-[color:var(--foreground-muted)]">
+                      {flatSkyboxes.length} {flatSkyboxes.length === 1 ? 'sky' : 'skies'}
+                    </p>
+                  </div>
+                  <p className="mt-2 text-sm leading-7 text-[color:var(--foreground-soft)]">
+                    {flatHeader.description}
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+                {flatSkyboxes.map((slug) => (
+                  <SkyboxCard key={slug} slug={slug} meta={meta[slug] || {}} stateQuery={stateQuery} />
+                ))}
+              </div>
+            </section>
+          )
+        ) : groupedSkyboxes.length === 0 ? (
+          <section className="border-t border-[color:var(--border-soft)] px-0 py-16 text-center">
+            <p className="text-[11px] uppercase tracking-[0.24em] text-[color:var(--foreground-muted)]">No results</p>
+            <h3 className="mt-3 font-display text-3xl font-semibold tracking-[-0.04em] text-white">
+              Nothing surfaced from that combination.
+            </h3>
+            <p className="mx-auto mt-4 max-w-xl text-sm leading-6 text-[color:var(--foreground-muted)]">
+              Try a broader mood, a different time of day, or a lighter filter to open the collection back up.
+            </p>
           </section>
-        ))}
+        ) : (
+          <div className="space-y-14">
+            {groupedSkyboxes.map(({ title, slugs: groupedSlugs }) => (
+              <section key={title} className="space-y-7">
+                <div className="border-b border-[color:var(--border-soft)] pb-5">
+                  <div className="max-w-2xl">
+                    <div className="flex flex-wrap items-baseline gap-x-3 gap-y-2">
+                      <h3 className="font-display text-3xl font-semibold tracking-[-0.04em] text-[color:var(--foreground-bright)] sm:text-[2rem]">
+                        {title} Skies
+                      </h3>
+                      <p className="text-sm text-[color:var(--foreground-muted)]">
+                        {groupedSlugs.length} {groupedSlugs.length === 1 ? 'sky' : 'skies'}
+                      </p>
+                    </div>
+                    <p className="mt-2 text-sm leading-7 text-[color:var(--foreground-soft)]">
+                      {descriptions[title] || `A curated run of ${title.toLowerCase()} skies for your next environment pass.`}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+                  {groupedSlugs.map((slug) => (
+                    <SkyboxCard key={slug} slug={slug} meta={meta[slug] || {}} stateQuery={stateQuery} />
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

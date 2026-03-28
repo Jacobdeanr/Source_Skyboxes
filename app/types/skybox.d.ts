@@ -26,6 +26,7 @@ export interface SkyboxMeta {
     description?: string;
     publishDate: string;
     license: string;
+    categories?: string[];
     timeOfDay?: string;
     weatherCondition?: string;
     steamMaps?: SteamMap[];
