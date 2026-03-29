@@ -202,9 +202,9 @@ export default function SkyboxDetailClient({
                 )}
               </div>
               <p className="mt-4 max-w-sm text-sm leading-7 text-[color:var(--foreground-soft)]">
-                {isLegacy
+                {meta.description || (isLegacy
                   ? 'An earlier sky preserved for community history and older projects. This entry does not necessarily include source files or current-generation lighting data.'
-                  : 'A production-ready sky with enough mood to set a scene and enough technical clarity to drop straight into a workflow.'}
+                  : 'A production-ready sky with enough mood to set a scene and enough technical clarity to drop straight into a workflow.')}
               </p>
               <div className="mt-4 space-y-2">
                 <button
@@ -296,15 +296,6 @@ export default function SkyboxDetailClient({
                   )}
                 </dl>
               </section>
-
-              {meta.description && (
-                <section className="space-y-3 border-b border-[color:var(--border-soft)] pb-6">
-                  <h2 className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[color:var(--foreground-muted)]">
-                    Collection note
-                  </h2>
-                  <p className="text-sm leading-7 text-[color:var(--foreground-soft)]">{meta.description}</p>
-                </section>
-              )}
 
               {!isLegacy && meta.sunParameters && (
                 <section className="space-y-3 border-b border-[color:var(--border-soft)] pb-6">
